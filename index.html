@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Provence & the Riviera — Bulthuis Family, June 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+:root{--paper:#f6efe0;--paper-2:#efe5d1;--ink:#2a2017;--ink-soft:#5b4d3d;--terra:#c2552f;--ochre:#cf9526;--olive:#69734a;--sea:#256079;--rose:#cf7d80;--line:rgba(42,32,23,.16);--shadow:0 18px 40px -20px rgba(42,32,23,.45);}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Spectral',Georgia,serif;background:var(--paper);color:var(--ink);line-height:1.62;font-size:17px;-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle at 12% 8%, rgba(207,149,38,.07), transparent 40%),radial-gradient(circle at 88% 30%, rgba(37,96,121,.06), transparent 45%),radial-gradient(circle at 50% 100%, rgba(194,85,47,.05), transparent 55%);}
+.wrap{max-width:1060px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+.eyebrow{font-family:'Fraunces',serif;font-weight:600;text-transform:uppercase;letter-spacing:.28em;font-size:12px;color:var(--terra)}
+.cover{position:relative;height:92vh;min-height:620px;display:flex;align-items:flex-end;overflow:hidden}
+.cover .photo{position:absolute;inset:0;background:linear-gradient(120deg,#2c5266,#7a8a4d 60%,#cf9526)}
+.cover .photo img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.02)}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,10,.15) 0%,rgba(20,16,10,.1) 45%,rgba(20,16,10,.78) 100%)}
+.cover-inner{position:relative;z-index:2;color:#fdf8ec;padding:0 26px 58px;max-width:1060px;margin:0 auto;width:100%}
+.cover h1{font-size:clamp(46px,9vw,116px);font-weight:900;color:#fdf8ec;text-shadow:0 2px 30px rgba(0,0,0,.35);line-height:.94}
+.cover h1 em{font-style:italic;font-weight:500;color:#f3d27e}
+.cover .sub{font-size:clamp(18px,2.4vw,24px);margin-top:18px;font-weight:300;letter-spacing:.02em;color:#f1e8d6}
+.cover .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+.cover .meta span{border:1px solid rgba(253,248,236,.45);border-radius:40px;padding:6px 16px;font-size:14px;letter-spacing:.04em;backdrop-filter:blur(3px);background:rgba(20,16,10,.18)}
+section{padding:74px 0}
+.section-head{margin-bottom:38px;max-width:760px}
+.section-head h2{font-size:clamp(30px,5vw,52px);margin-top:10px}
+.section-head p{color:var(--ink-soft);margin-top:14px;font-size:18px}
+.rule{height:2px;width:54px;background:var(--terra);margin:0 0 4px;border-radius:2px}
+.nav{position:sticky;top:0;z-index:40;background:rgba(246,239,224,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding-top:12px;padding-bottom:12px}
+.nav b{font-family:'Fraunces',serif;font-weight:900;letter-spacing:-.01em;margin-right:auto;font-size:17px}
+.nav a{font-size:13px;text-decoration:none;color:var(--ink-soft);padding:6px 12px;border-radius:30px;letter-spacing:.03em;transition:.2s}
+.nav a:hover{background:var(--ink);color:var(--paper)}
+.timeline{position:relative;border-left:2px solid var(--line);margin-left:8px}
+.leg{position:relative;padding:0 0 8px 30px;margin-bottom:6px}
+.leg::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--terra);box-shadow:0 0 0 4px var(--paper)}
+.leg.move::before{background:var(--sea)}
+.leg .day{font-family:'Fraunces',serif;font-weight:600;font-size:15px;color:var(--terra);letter-spacing:.02em}
+.leg.move .day{color:var(--sea)}
+.leg .what{font-size:17px;margin-top:1px}
+.leg .drive{display:inline-block;font-size:13px;color:var(--ink-soft);font-style:italic;margin-top:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.fact{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;box-shadow:var(--shadow)}
+.fact h4{font-size:14px;text-transform:uppercase;letter-spacing:.14em;color:var(--terra);margin-bottom:10px;font-weight:600}
+.fact p{font-size:15.5px}
+.fact .big{font-family:'Fraunces',serif;font-size:20px;font-weight:600;line-height:1.2;display:block;margin:2px 0}
+.flag{background:#fbeede;border-left:4px solid var(--terra);padding:14px 18px;border-radius:0 12px 12px 0;font-size:15.5px;margin-top:18px}
+.flag b{color:var(--terra)}
+.base{padding:0;margin-bottom:8px}
+.base-hero{position:relative;border-radius:18px;overflow:hidden;min-height:340px;display:flex;align-items:flex-end;box-shadow:var(--shadow)}
+.base-hero .photo{position:absolute;inset:0}
+.base-hero .photo img{width:100%;height:100%;object-fit:cover}
+.base-hero.sea .photo{background:linear-gradient(130deg,#1f5066,#3d7e93)}
+.base-hero.roman .photo{background:linear-gradient(130deg,#9c4a2a,#cf9526)}
+.base-hero.camargue .photo{background:linear-gradient(130deg,#7b6f3f,#cf7d80)}
+.base-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,10,.05),rgba(20,16,10,.72))}
+.base-hero .label{position:relative;z-index:2;color:#fdf8ec;padding:30px 30px 26px}
+.base-hero .label .n{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(30px,5vw,46px);line-height:1}
+.base-hero .label .d{font-size:15px;letter-spacing:.06em;margin-top:6px;opacity:.95}
+.base-hero .label .nights{display:inline-block;margin-top:12px;background:rgba(253,248,236,.16);border:1px solid rgba(253,248,236,.4);border-radius:30px;padding:4px 14px;font-size:13px;backdrop-filter:blur(3px)}
+.stay{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0 30px}
+.stay .box{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:20px}
+.stay .box h4{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--olive);margin-bottom:8px;font-weight:600}
+.stay .box.park h4{color:var(--sea)}
+.stay .box p{font-size:15px}
+.stay .box .addr{font-family:'Fraunces',serif;font-weight:600;font-size:16px}
+.menu-title{font-family:'Fraunces',serif;font-weight:600;font-size:20px;margin:26px 0 14px;display:flex;align-items:center;gap:10px}
+.menu-title::after{content:"";flex:1;height:1px;background:var(--line)}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.opt{background:#fffdf7;border:1px solid var(--line);border-radius:14px;position:relative;transition:.18s;box-shadow:0 6px 18px -14px rgba(42,32,23,.5);overflow:hidden;display:flex;flex-direction:column}
+.opt:hover{transform:translateY(-3px);box-shadow:0 16px 30px -18px rgba(42,32,23,.55)}
+.opt .thumb{display:block;height:120px;position:relative;background:linear-gradient(135deg,#d9cbac,#e9dcc2)}
+.opt .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.opt .thumb::after{content:"⤢ Map";position:absolute;bottom:8px;right:8px;font-family:'Fraunces',serif;font-size:10px;letter-spacing:.08em;color:#fff;background:rgba(20,16,10,.55);padding:3px 8px;border-radius:20px;text-transform:uppercase;backdrop-filter:blur(2px)}
+.opt .body2{padding:15px 18px 17px}
+.opt .tag{font-family:'Fraunces',serif;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.13em;padding:3px 9px;border-radius:20px;display:inline-block;margin-bottom:10px}
+.t-beach{background:#dcebef;color:#1f5066}.t-roman{background:#f5e1cf;color:#9c4a2a}.t-nature{background:#e2e8d4;color:#54603a}
+.t-kids{background:#f6e4cf;color:#b06a18}.t-trip{background:#e8ddef;color:#6b4a85}.t-food{background:#f3dede;color:#9c3f48}
+.t-views{background:#dde7ea;color:#2a5e72}.t-culture{background:#e9e2d2;color:#7a6320}
+.opt h5{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:6px;line-height:1.15}
+.opt h5 a{color:inherit;text-decoration:none;border-bottom:1.5px solid transparent;transition:.15s}
+.opt h5 a:hover{color:var(--terra);border-bottom-color:var(--terra)}
+.opt p{font-size:14.5px;color:var(--ink-soft);line-height:1.5}
+.opt .note{display:block;margin-top:9px;font-size:13px;color:var(--ink);font-style:italic;border-top:1px dashed var(--line);padding-top:8px}
+.opt .note b{font-style:normal;color:var(--terra)}
+.star{position:absolute;top:10px;left:12px;z-index:3;font-size:14px;color:#fff;background:var(--ochre);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.todo-group{margin-bottom:26px}
+.todo-group h3{font-size:22px;margin-bottom:6px}
+.todo{display:flex;gap:14px;align-items:flex-start;background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:9px;cursor:pointer;transition:.15s}
+.todo:hover{border-color:var(--terra)}
+.todo .check{flex:0 0 22px;height:22px;border:2px solid var(--ink-soft);border-radius:6px;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:.15s}
+.todo.done .check{background:var(--olive);border-color:var(--olive)}
+.todo .check svg{width:13px;height:13px;opacity:0;transition:.15s}
+.todo.done .check svg{opacity:1}
+.todo.done .body{opacity:.5;text-decoration:line-through}
+.todo .body h5{font-family:'Fraunces',serif;font-weight:600;font-size:16px}
+.todo .body p{font-size:14px;color:var(--ink-soft)}
+.ptable{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--paper-2);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+.ptable th{background:var(--ink);color:var(--paper);text-align:left;padding:13px 16px;font-family:'Fraunces',serif;font-weight:600;font-size:13px;letter-spacing:.05em}
+.ptable td{padding:13px 16px;border-top:1px solid var(--line);vertical-align:top}
+.ptable td:first-child{font-family:'Fraunces',serif;font-weight:600;color:var(--ink)}
+.ptable .pick{color:var(--olive);font-weight:600}
+footer{background:var(--ink);color:#e8dcc7;padding:46px 0;margin-top:40px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+footer h3{color:#f3d27e;font-size:24px}
+footer p{font-size:14px;opacity:.8}
+@media (max-width:680px){.stay{grid-template-columns:1fr}section{padding:52px 0}body{font-size:16px}}
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="photo"><img src="https://pontdugard.fr/sites/default/files/2024-07/348_Pont_du_Gard_BRL_23_09_08_%C2%A9LaurentRebelle_0.jpg" alt="Pont du Gard" onerror="this.style.display='none'"></div>
+  <div class="cover-inner">
+    <div class="eyebrow" style="color:#f3d27e">Family Travel Packet</div>
+    <h1>Provence<br>& the <em>Riviera</em></h1>
+    <div class="sub">Bulthuis family · 14–24 June 2026 · Antibes → Nîmes → Camargue</div>
+    <div class="meta"><span>✈ Montreal ⇌ Nice, nonstop</span><span>◷ 9 days on the ground</span><span>⌂ 3 bases</span><span>♘ Kids 8 & 10</span></div>
+  </div>
+</header>
+
+<nav class="nav"><div class="wrap">
+  <b>Provence '26</b>
+  <a href="#flow">Itinerary</a><a href="#logistics">Flights</a><a href="#antibes">Antibes</a><a href="#nimes">Nîmes</a><a href="#camargue">Camargue</a><a href="#todo">To-Do</a><a href="#parking">Parking</a>
+</div></nav>
+
+<section id="flow"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">The shape of the trip</div><h2>Itinerary at a glance</h2>
+    <p>Confirmed bases and drive legs. Activities are a menu — pick and choose per base; nothing below the skeleton is locked.</p></div>
+  <div class="timeline">
+    <div class="leg move"><div class="day">Sun · Jun 14</div><div class="what">Depart <b>Montreal</b> 8:00 pm — overnight flight</div></div>
+    <div class="leg"><div class="day">Mon · Jun 15</div><div class="what">Land <b>Nice</b> 9:50 am · pick up rental car · settle in <b>Antibes</b></div><span class="drive">↳ NCE → Antibes ≈ 25 min</span></div>
+    <div class="leg"><div class="day">Tue · Jun 16</div><div class="what">Antibes & the Riviera</div></div>
+    <div class="leg move"><div class="day">Wed · Jun 17</div><div class="what">Check out · drive to <b>Nîmes</b> (afternoon)</div><span class="drive">↳ Antibes → Nîmes ≈ 2 h 45 m</span></div>
+    <div class="leg"><div class="day">Thu · Jun 18</div><div class="what">Nîmes — Roman day / day trip <span style="font-size:13px;color:var(--ink-soft)">(Kate working)</span></div></div>
+    <div class="leg"><div class="day">Fri · Jun 19</div><div class="what">Nîmes — Roman day / day trip <span style="font-size:13px;color:var(--ink-soft)">(Kate working)</span></div></div>
+    <div class="leg move"><div class="day">Sat · Jun 20</div><div class="what">Check out · drive to <b>Saintes-Maries-de-la-Mer</b></div><span class="drive">↳ Nîmes → Camargue ≈ 1 h</span></div>
+    <div class="leg"><div class="day">Sun · Jun 21</div><div class="what">Camargue — beach & wildlife</div></div>
+    <div class="leg"><div class="day">Mon · Jun 22</div><div class="what">Camargue — beach & day trip</div></div>
+    <div class="leg"><div class="day">Tue · Jun 23</div><div class="what">Camargue — beach</div></div>
+    <div class="leg move"><div class="day">Wed · Jun 24</div><div class="what">Early drive to <b>Nice</b> · return car · fly home 11:00 am → Montreal 2:00 pm</div><span class="drive">↳ Camargue → NCE ≈ 3 h · roll out ~5:30–6:00 am</span></div>
+  </div>
+</div></section>
+
+<section id="logistics" style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">The bones</div><h2>Flights & key logistics</h2></div>
+  <div class="cards">
+    <div class="fact"><h4>✈ Outbound</h4><p><span class="big">Montreal → Nice</span>Air Canada, nonstop<br>Sun Jun 14, 8:00 pm → Mon Jun 15, 9:50 am</p></div>
+    <div class="fact"><h4>✈ Return</h4><p><span class="big">Nice → Montreal</span>Air Canada, nonstop<br>Wed Jun 24, 11:00 am → 2:00 pm</p></div>
+    <div class="fact"><h4>🚗 Rental car — Avis ✓</h4><p><span class="big">Renault Symbioz (or similar)</span>Nice Airport T1, Jun 15 10:00 am → Jun 24 10:00 am. Auto, unlimited km. Prepaid $509.82.</p></div>
+    <div class="fact"><h4>🛂 Documents</h4><p><span class="big">Passports only</span>ETIAS is <b>not</b> required for June 2026 (launches Q4 2026). IDP optional.</p></div>
+  </div>
+  <div class="flag"><b>Verify:</b> the Air Canada flights appear in your planning notes but not as a ticketed confirmation in your inbox — worth confirming they're actually booked.</div>
+  <div class="flag"><b>Last-day timing:</b> the 3-hour Camargue→Nice drive means leaving the coast ~5:30–6:00 am for the 11:00 am flight. Your Avis drop is reserved for 10:00 am — you'll actually return earlier (~8:30 am); the desk opens 7:00 am, so that's fine.</div>
+</div></section>
+
+<section id="antibes"><div class="wrap"><div class="base">
+  <div class="base-hero sea"><div class="photo"><img src="https://www.antibesjuanlespins.com/sites/antibes/files/styles/ogimage/public/page/antibesvueducieljuan-les-pinscmairiedantibesscecommunicationjfdiaz.jpg?itok=_Ej11ktD" alt="Antibes" onerror="this.style.display='none'"></div>
+    <div class="label"><div class="n">Antibes & the Riviera</div><div class="d">MON 15 – WED 17 JUNE</div><span class="nights">2 nights · arrival leg (jetlagged — keep day one easy)</span></div></div>
+  <div class="stay">
+    <div class="box"><h4>⌂ Where you're staying</h4><p class="addr">Charmant 3 Pièces, Vieil Antibes</p><p>3 Rue des Paveurs — in the pedestrian heart of the old town.</p></div>
+    <div class="box park"><h4>🅿 Parking</h4><p>Old town is pedestrianized — no parking at the door. Best: <b>Q-Park Pré aux Pêcheurs</b> (newest, fits larger cars) or open-air <b>Parking Port Vauban</b> (cheaper). Buy a multi-day pass. Skip Q-Park La Poste.</p></div>
+  </div>
+  <div class="menu-title">Options — pick a couple</div>
+  <div class="opts">
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=March%C3%A9%20Proven%C3%A7al%20Antibes" target="_blank" rel="noopener"><img src="https://www.antibesjuanlespins.com/sites/antibes/files/styles/ogimage/public/page/antibesvueducieljuan-les-pinscmairiedantibesscecommunicationjfdiaz.jpg?itok=_Ej11ktD" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-food">Easy / Food</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=March%C3%A9%20Proven%C3%A7al%20Antibes" target="_blank" rel="noopener">Vieil Antibes + Marché Provençal</a></h5><p>Wander the old town and graze the covered Provençal market on Cours Masséna — fruit, cheese, olives, socca.</p><span class="note"><b>Best for</b> a low-key jetlag arrival afternoon.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20de%20la%20Gravette%20Antibes" target="_blank" rel="noopener"><img src="https://www.antibesjuanlespins.com/sites/antibes/files/styles/ogimage/public/page/21072016-20a0561.jpg?itok=1hebo1IA" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-beach">Beach</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20de%20la%20Gravette%20Antibes" target="_blank" rel="noopener">Plage de la Gravette</a></h5><p>Sheltered sandy cove tucked against the old-town ramparts — calm, shallow, walkable.</p><span class="note"><b>Best for</b> first-day swim with no driving.</span></div></div>
+
+    <div class="opt"><span class="star">★</span><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=%C3%8Ele%20Sainte-Marguerite" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ile%20Sainte%20Marguerite%20-%20Flickr%20-%20berniedup.jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-kids">Day trip / Boat</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=%C3%8Ele%20Sainte-Marguerite" target="_blank" rel="noopener">Île Sainte-Marguerite (Lérins)</a></h5><p>Short ferry to a pine-forest island with swimming coves and the fort that held the "Man in the Iron Mask." Trails to roam.</p><span class="note"><b>Standout half-day.</b> Ferry from Port Vauban.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Sentier%20du%20Littoral%20Cap%20d'Antibes" target="_blank" rel="noopener"><img src="https://www.antibesjuanlespins.com/sites/antibes/files/styles/ogimage/public/page/yq4b3338.jpg?itok=LhHffxmK" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-views">Walk / Nature</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Sentier%20du%20Littoral%20Cap%20d'Antibes" target="_blank" rel="noopener">Sentier du Littoral (Tirepoil)</a></h5><p>Signed coastal path around Cap d'Antibes past secret coves and grand villas. Turn back whenever. Wear grippy shoes.</p><span class="note"><b>Note:</b> can shorten to any length.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20de%20la%20Garoupe%20Antibes" target="_blank" rel="noopener"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMjAzLzE0LzM0NTQxMjU5LmpwZw==/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-beach">Beach</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20de%20la%20Garoupe%20Antibes" target="_blank" rel="noopener">Plage de la Garoupe</a></h5><p>Cap d'Antibes' prettiest sand beach — fine sand, clear water, mountain views.</p><span class="note"><b>Heads up:</b> under renovation through ~June 2026 — check it's reopened before going.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Fort%20Carr%C3%A9%20Antibes" target="_blank" rel="noopener"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cDovL21lZGlhcy50b3VyaXNtLXN5c3RlbS5jb20vOS9iLzQ5OTAyOF9mb3J0LWNhcnJlLTIwMTYtMDJqX2Jyb3NzZXQuanBn/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-views">History / Views</span><h5><a href="https://www.antibesjuanlespins.com/en/must-see-must-do/culture-and-heritage/heritage/the-fort-carre-2032216" target="_blank" rel="noopener">Fort Carré</a></h5><p>16th-c. star-shaped fort on the harbor, 4 ha of grounds and a 43 m rampart walk with sweeping views.</p><span class="note"><b>Note:</b> reservations recommended; check hours.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Mus%C3%A9e%20Picasso%20Antibes" target="_blank" rel="noopener"><img src="https://www.antibesjuanlespins.com/sites/antibes/files/styles/ogimage/public/page/22072016-20a0129.jpg?itok=BYemYe78" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-culture">Culture</span><h5><a href="https://www.antibesjuanlespins.com/en/must-see-must-do/culture-and-heritage/museums/picasso-museum-2031894" target="_blank" rel="noopener">Picasso Museum, Château Grimaldi</a></h5><p>Seafront castle where Picasso worked in 1946. Quick, art-forward stop for the grown-ups.</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Phare%20de%20la%20Garoupe%20Antibes" target="_blank" rel="noopener"><img src="https://www.antibesjuanlespins.com/sites/antibes/files/styles/ogimage/public/page/20160706-chapellegaroupe-01.jpg?itok=K6gqSqJ1" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-views">Views</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Phare%20de%20la%20Garoupe%20Antibes" target="_blank" rel="noopener">Chapelle & Phare de la Garoupe</a></h5><p>Hilltop chapel + lighthouse with panoramas over Juan-les-Pins and the bay toward Nice.</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Vieille%20Ville%20Nice%20France" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ile%20Sainte%20Marguerite%20-%20Flickr%20-%20berniedup.jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-trip">Day trip</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Vieille%20Ville%20Nice%20France" target="_blank" rel="noopener">Nice, Cannes or a hill village</a></h5><p>If energy allows: Nice old town & flower market, Cannes' Croisette, or hilltop Èze / St-Paul-de-Vence. Save for the non-arrival day.</p></div></div>
+  </div>
+</div></div></section>
+
+<section id="nimes" style="background:var(--paper-2)"><div class="wrap"><div class="base">
+  <div class="base-hero roman"><div class="photo"><img src="https://museedelaromanite.fr/content/uploads/2018/07/photo-arenes.v1532448047.jpg" alt="Arènes de Nîmes" onerror="this.style.display='none'"></div>
+    <div class="label"><div class="n">Nîmes</div><div class="d">WED 17 – SAT 20 JUNE</div><span class="nights">3 nights · you + kids (Kate working)</span></div></div>
+  <div class="stay">
+    <div class="box"><h4>⌂ Where you're staying</h4><p class="addr">Jolie Maison — Jardins de la Fontaine</p><p>16 Rue Canteduc — northwest of centre, by the gardens; walkable to the Roman core.</p></div>
+    <div class="box park"><h4>🅿 Parking</h4><p>You're a touch out of the hyper-centre — <b>try street parking around Rue Canteduc first</b>. Garage backups: <b>Q-Park Jean Jaurès</b> (near the gardens) or <b>Parking Maison Carrée</b>. Garages are tight.</p></div>
+  </div>
+  <div class="menu-title">In town — Roman Nîmes on foot</div>
+  <div class="opts">
+    <div class="opt"><span class="star">★</span><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Ar%C3%A8nes%20de%20N%C3%AEmes" target="_blank" rel="noopener"><img src="https://museedelaromanite.fr/content/uploads/2018/07/photo-arenes.v1532448047.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-roman">Roman / Kids</span><h5><a href="https://www.arenes-nimes.com/" target="_blank" rel="noopener">Arènes de Nîmes</a></h5><p>One of the best-preserved Roman amphitheatres anywhere. The audioguide puts kids in a spectator's shoes for the gladiator games.</p><span class="note"><b>June hours</b> ~9 am–7 pm.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Maison%20Carr%C3%A9e%20N%C3%AEmes" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20Carr%C3%A9e%20N%C3%AEmes.jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-roman">Roman</span><h5><a href="https://www.lamaisoncarreedenimes.fr/" target="_blank" rel="noopener">Maison Carrée</a></h5><p>An intact Roman temple in the centre, ringed by café terraces and ice-cream stops; short film inside. UNESCO-listed.</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Mus%C3%A9e%20de%20la%20Romanit%C3%A9%20N%C3%AEmes" target="_blank" rel="noopener"><img src="https://museedelaromanite.fr/content/uploads/2021/03/%28C%29stephane_ramillon_ville_de_nimes-1-300x129.v1617009407.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-kids">Roman / Kids</span><h5><a href="https://museedelaromanite.fr/" target="_blank" rel="noopener">Musée de la Romanité</a></h5><p>Sleek interactive museum facing the arena — includes <b>Ludo</b>, a hands-on kids' space (ages ~5–12).</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Jardins%20de%20la%20Fontaine%20N%C3%AEmes" target="_blank" rel="noopener"><img src="https://museedelaromanite.fr/content/uploads/2021/04/jardin-de-la-fontaine-300x200.v1617971071.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-views">Walk / Views</span><h5><a href="https://www.arenes-nimes.com/" target="_blank" rel="noopener">Tour Magne + Jardins de la Fontaine</a></h5><p>Leafy 18th-c. gardens (by your rental) climbing to a Roman tower — 140 steps to a panorama. Great for burning kid energy.</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Halles%20de%20N%C3%AEmes" target="_blank" rel="noopener"><img src="https://static.apidae-tourisme.com/filestore/objets-touristiques/images/100/130/14647908.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-food">Food</span><h5><a href="https://leshallesdenimes.fr/" target="_blank" rel="noopener">Les Halles de Nîmes</a></h5><p>Covered market (daily 7 am–1 pm) for a build-your-own lunch — local cheeses, charcuterie, brandade, pastries.</p></div></div>
+  </div>
+  <div class="menu-title">Day trips — short drives</div>
+  <div class="opts">
+    <div class="opt"><span class="star">★</span><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Pont%20du%20Gard" target="_blank" rel="noopener"><img src="https://pontdugard.fr/sites/default/files/2024-07/348_Pont_du_Gard_BRL_23_09_08_%C2%A9LaurentRebelle_0.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-kids">Top pick / Water</span><h5><a href="https://pontdugard.fr/" target="_blank" rel="noopener">Pont du Gard</a></h5><p>The colossal Roman aqueduct. Swim and picnic in the Gardon below, a kids' interactive space + film up top; kayaking from Collias as an add-on.</p><span class="note"><b>Drive</b> ≈ 30 min · on the City Pass.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Uz%C3%A8s%20France" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Uz%C3%A8s%20-%20place%20Dampmartin.jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-trip">Town / Market</span><h5><a href="https://www.uzes-pontdugard.com/en/patrimoine-culturel/le-duche-duzes/" target="_blank" rel="noopener">Uzès</a></h5><p>Honey-stone medieval town with the Duché castle and an arcaded square.</p><span class="note"><b>Drive</b> ≈ 30 min · market Wed & Sat.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Escattes%20Aventure%20N%C3%AEmes" target="_blank" rel="noopener"><img src="https://static.apidae-tourisme.com/filestore/objets-touristiques/images/81/146/14127697.png" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-kids">Active / Kids</span><h5><a href="https://www.escattes-aventure.com/" target="_blank" rel="noopener">Accrobranche — Escattes Aventure</a></h5><p>Treetop park 10 min from the centre: 14 courses (from age 2/4), ziplines, continuous safety line. €7–22. Pure kid fun.</p><span class="note"><b>Drive</b> ≈ 15 min · open daily May–Jun.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Palais%20des%20Papes%20Avignon" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20des%20Papes%20(52126520499).jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-trip">History / Kids</span><h5><a href="https://palais-des-papes.com/" target="_blank" rel="noopener">Avignon — Palais des Papes</a></h5><p>Palais des Papes and the famous half-bridge (Pont d'Avignon) from the children's song.</p><span class="note"><b>Drive</b> ≈ 45 min.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Ar%C3%A8nes%20d'Arles" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/France-Arles-ArenaFromEast-2025-09-s.jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-roman">Roman / Art</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Ar%C3%A8nes%20d'Arles" target="_blank" rel="noopener">Arles</a></h5><p>Roman arena and theatre + Van Gogh sites. <b>Closer from the Camargue</b> — consider saving it for that leg.</p><span class="note"><b>Drive</b> ≈ 35 min.</span></div></div>
+  </div>
+</div></div></section>
+
+<section id="camargue"><div class="wrap"><div class="base">
+  <div class="base-hero camargue"><div class="photo"><img src="https://www.provence-camargue-tourisme.com/app/uploads/2025/03/terre-argence-cheval-camargue-10.webp" alt="Camargue horses" onerror="this.style.display='none'"></div>
+    <div class="label"><div class="n">Camargue · Saintes-Maries</div><div class="d">SAT 20 – WED 24 JUNE</div><span class="nights">4 nights · beach base + wildlife · the relaxed leg</span></div></div>
+  <div class="stay">
+    <div class="box"><h4>⌂ Where you're staying</h4><p class="addr">Maison de famille avec rooftop</p><p>28 Chemin des Macreuses, Saintes-Maries-de-la-Mer.</p></div>
+    <div class="box park"><h4>🅿 Parking</h4><p>Easiest of the three. A <b>free, well-rated lot is on your own street</b> — "Parking Chemin des Macreuses." <b>Avoid</b> the free lot at Chemin du Pont Blanc (break-in reports); never leave valuables in the car.</p></div>
+  </div>
+  <div class="menu-title">Beach & town</div>
+  <div class="opts">
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20des%20Saintes-Maries-de-la-Mer" target="_blank" rel="noopener"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMTcyLzE4NS8yNTIxMzM1Ni5qcGc=/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-beach">Beach</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20des%20Saintes-Maries-de-la-Mer" target="_blank" rel="noopener">Plage des Saintes-Maries / l'Arène</a></h5><p>Sandy, gently shelving beach walkable from the village — your easy default beach days.</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20de%20l'Espiguette" target="_blank" rel="noopener"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMjAzLzE0LzM0NTQxMjU5LmpwZw==/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-beach">Beach / Epic</span><h5><a href="https://letsgrau.com/que-faire/nature/espiguette/" target="_blank" rel="noopener">Plage de l'Espiguette</a></h5><p>Vast wild dune beach if you want one "wow" beach day with space to roam.</p><span class="note"><b>Drive</b> ≈ 40 min (toward Le Grau-du-Roi).</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=%C3%89glise%20Notre-Dame-de-la-Mer%20Saintes-Maries-de-la-Mer" target="_blank" rel="noopener"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMjQwLzI1NS85NTY4MjQwLmpwZw==/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-views">History / Views</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=%C3%89glise%20Notre-Dame-de-la-Mer%20Saintes-Maries-de-la-Mer" target="_blank" rel="noopener">Fortified church rooftop</a></h5><p>Climb 53 steps for a panorama over village and sea; the church Van Gogh painted, visible 10 km off. Interior free, terrace ~€3.</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Petit%20Train%20Camarguais%20Saintes-Maries-de-la-Mer" target="_blank" rel="noopener"><img src="https://www.provence-camargue-tourisme.com/app/uploads/2025/03/terre-argence-cheval-camargue-10.webp" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-kids">Kids / Nature</span><h5><a href="https://www.petittraincamarguais.fr/" target="_blank" rel="noopener">Le Petit Train Camarguais</a></h5><p>50-min narrated ride through the regional park — ponds, bulls, horses, flamingos. Departs by the tourist office; €10 adult / €6 child.</p></div></div>
+  </div>
+  <div class="menu-title">Camargue nature — the local magic</div>
+  <div class="opts">
+    <div class="opt"><span class="star">★</span><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Parc%20Ornithologique%20de%20Pont%20de%20Gau" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/001%20Greater%20flamingo%20in%20flight%20in%20the%20Camargue%20Photo%20by%20Giles%20Laurent.jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-nature">Nature / Kids</span><h5><a href="https://www.parcornithologique.com/" target="_blank" rel="noopener">Parc Ornithologique de Pont de Gau</a></h5><p>Boardwalks and hides among hundreds of flamingos and other birds — the easiest wildlife win with kids. €7.50 adult / €5 child.</p><span class="note"><b>Drive</b> ≈ 7 min · no booking needed.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Promenade%20Lou%20Seden%20Saintes-Maries-de-la-Mer" target="_blank" rel="noopener"><img src="https://www.provence-camargue-tourisme.com/app/uploads/2025/03/terre-argence-cheval-camargue-10.webp" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-nature">Active / Nature</span><h5><a href="https://www.promenadelouseden.com/" target="_blank" rel="noopener">Horseback ride — Promenade Lou Seden</a></h5><p>Top pick: a Camargue equestrian centre near the village with rides for all levels, across beach and marsh past bulls and flamingos. Calm horses, good with kids.</p><span class="note"><b>Book ahead</b> in summer.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Camargue%20Safari%20Tours%20Saintes-Maries-de-la-Mer" target="_blank" rel="noopener"><img src="https://www.camargue-autrement.com/assets/img/slider/safari.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-nature">Nature</span><h5><a href="https://www.camarguesafaritours.fr/" target="_blank" rel="noopener">4×4 or vintage 2CV safari</a></h5><p>Guided run deep into the wetlands for white horses, black bulls and flamingos — no driving yourself. Camargue Safari Tours departs the village in a Defender or open-top 2CV.</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Bateau%20Tiki%20III%20Saintes-Maries-de-la-Mer" target="_blank" rel="noopener"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMjU1LzExMS8xMTk1NjIyMy5qcGc=/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-nature">Boat / Nature</span><h5><a href="https://tiki3.fr/" target="_blank" rel="noopener">Bateau Tiki III — Petit Rhône cruise</a></h5><p>1h30 on an old paddlewheel boat up the Petit Rhône — herds and birds from the water, with a gardian/manade stop. €16 adult / €9 child.</p></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Digue%20%C3%A0%20la%20Mer%20Camargue" target="_blank" rel="noopener"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMTcyLzE4NS8yNTIxMzM1Ni5qcGc=/image.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-nature">Active</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Digue%20%C3%A0%20la%20Mer%20Camargue" target="_blank" rel="noopener">Bike the Digue à la Mer</a></h5><p>Flat sea-dike path separating marsh from sea — rent bikes in town, flamingos overhead.</p></div></div>
+  </div>
+  <div class="menu-title">Day trips</div>
+  <div class="opts">
+    <div class="opt"><span class="star">★</span><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Aigues-Mortes" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aigues%20Mortes%20-%20a%20fortified%20town%20(49711092361).jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-kids">History / Kids</span><h5><a href="https://www.aigues-mortes-monument.fr/" target="_blank" rel="noopener">Aigues-Mortes + salt flats</a></h5><p>Walk the ramparts of a perfectly walled medieval town, then the rose-pink salt pans next door by little train.</p><span class="note"><b>Drive</b> ≈ 40 min · strong combo day.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Ar%C3%A8nes%20d'Arles" target="_blank" rel="noopener"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/France-Arles-ArenaFromEast-2025-09-s.jpg?width=600" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-roman">Roman / Art / Market</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Ar%C3%A8nes%20d'Arles" target="_blank" rel="noopener">Arles</a></h5><p>Roman arena and theatre + Van Gogh sites; huge Saturday market (note Sat is your drive-in day).</p><span class="note"><b>Drive</b> ≈ 35 min.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Pont%20du%20Gard" target="_blank" rel="noopener"><img src="https://pontdugard.fr/sites/default/files/2024-07/348_Pont_du_Gard_BRL_23_09_08_%C2%A9LaurentRebelle_0.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></a><div class="body2"><span class="tag t-roman">Roman / Water</span><h5><a href="https://pontdugard.fr/" target="_blank" rel="noopener">Pont du Gard</a></h5><p>If you skipped it from Nîmes, it's still reachable for a river-swim day.</p><span class="note"><b>Drive</b> ≈ 1 h.</span></div></div>
+  </div>
+</div></div></section>
+
+<section id="todo" style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Before we go</div><h2>To-do list</h2>
+    <p>Tap an item to check it off (resets if you reload — this is a worksheet, not a saved list).</p></div>
+  <div class="todo-group"><h3>Book / reserve</h3>
+    <div class="todo done"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Rent the car — booked (Avis ✓)</h5><p>Renault Symbioz, NCE T1, Jun 15 → 24, prepaid.</p></div></div>
+    <div class="todo"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Reserve Montreal (YUL) airport parking</h5><p>~Jun 14 evening → Jun 24 afternoon (~10 days). Book ahead for the rate; on-airport vs. off-airport + shuttle.</p></div></div>
+    <div class="todo"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Arrange dog sitting</h5><p>Cover Jun 14 through the night of Jun 24 (you land YUL 2 pm, then drive home to NH).</p></div></div>
+    <div class="todo"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Book Camargue activities that sell out</h5><p>Horseback at Promenade Lou Seden, the Tiki III boat, or a Camargue Safari Tours 4×4/2CV (links on the cards). Pont de Gau bird park and the Petit Train need no booking.</p></div></div>
+    <div class="todo"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Decide on the Nîmes City Pass</h5><p>Bundles arena + Maison Carrée + Musée de la Romanité + Pont du Gard. Buy online if doing 3+ sites. Add Pont du Gard kayak (Collias) if wanted.</p></div></div>
+    <div class="todo"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Lérins ferry (if doing Sainte-Marguerite)</h5><p>From Port Vauban — buy day-of or online in peak season.</p></div></div>
+  </div>
+  <div class="todo-group"><h3>Confirm / check</h3>
+    <div class="todo"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Confirm the Air Canada flights are ticketed</h5><p>We only found the times in your planning notes, not a booking confirmation.</p></div></div>
+    <div class="todo"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Decide how much to do per base</h5><p>The menus are deliberately overstuffed — prune to a realistic pace, especially the solo-parent Nîmes days.</p></div></div>
+    <div class="todo"><div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></div><div class="body"><h5>Offline maps + euros / no-FX card</h5><p>Download offline maps for the Camargue (patchy signal); confirm the travel card is set.</p></div></div>
+  </div>
+  <div class="flag"><b>Settled, no action:</b> checkout timing works · credit card is fine · passports & flights confirmed by you · ETIAS not required · IDP optional (skipping is fine — same as your Denmark rental).</div>
+</div></section>
+
+<section id="parking"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Quick reference</div><h2>Where to park</h2>
+    <p>General rule everywhere: French garages have tight entrances and narrow bays — if the rental is an SUV/wagon, favor open-air lots and any "fits larger vehicles" option.</p></div>
+  <table class="ptable">
+    <thead><tr><th>Base / stop</th><th>Best option</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Antibes<br><span style="font-weight:400;font-size:13px;color:var(--ink-soft)">3 Rue des Paveurs</span></td><td class="pick">Q-Park Pré aux Pêcheurs</td><td>Newest, spacious, fits larger cars. Open-air <b>Port Vauban</b> is the cheaper alternative. Multi-day pass beats hourly. Avoid Q-Park La Poste.</td></tr>
+      <tr><td>Nîmes<br><span style="font-weight:400;font-size:13px;color:var(--ink-soft)">16 Rue Canteduc</span></td><td class="pick">Street near Rue Canteduc</td><td>More residential here — try the street first. Garage backups: <b>Q-Park Jean Jaurès</b> (near the gardens) or <b>Maison Carrée</b>.</td></tr>
+      <tr><td>Camargue<br><span style="font-weight:400;font-size:13px;color:var(--ink-soft)">28 Chemin des Macreuses</span></td><td class="pick">Parking Chemin des Macreuses</td><td>Free, well-rated, on your own street. <b>Avoid</b> the Chemin du Pont Blanc lot — break-in reports.</td></tr>
+      <tr><td>Day trips</td><td class="pick">On-site / edge-of-walls lots</td><td>Pont du Gard has a large official lot (with admission). Aigues-Mortes & Arles have signed lots just outside the old walls.</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<footer><div class="wrap">
+  <div><h3>Bon voyage, les Bulthuis</h3><p>Provence & the Riviera · 14–24 June 2026 · a working draft — say what to cut or add.</p></div>
+  <p>Antibes · Nîmes · Camargue</p>
+</div></footer>
+
+<script>
+  document.querySelectorAll('.todo').forEach(function(t){ t.addEventListener('click',function(){ t.classList.toggle('done'); }); });
+</script>
+
+</body>
+</html>
