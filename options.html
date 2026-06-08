@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mid-trip rethink — Provence Jun 17–20 options</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+:root{--paper:#f6efe0;--paper-2:#efe5d1;--ink:#2a2017;--ink-soft:#5b4d3d;--terra:#c2552f;--ochre:#cf9526;--olive:#69734a;--sea:#256079;--rose:#cf7d80;--line:rgba(42,32,23,.16);--shadow:0 18px 40px -20px rgba(42,32,23,.45);}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Spectral',Georgia,serif;background:var(--paper);color:var(--ink);line-height:1.62;font-size:17px;-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle at 12% 8%, rgba(207,149,38,.07), transparent 40%),radial-gradient(circle at 88% 30%, rgba(37,96,121,.06), transparent 45%),radial-gradient(circle at 50% 100%, rgba(194,85,47,.05), transparent 55%);}
+.wrap{max-width:1000px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.15;letter-spacing:-.01em}
+.eyebrow{font-family:'Fraunces',serif;font-weight:600;text-transform:uppercase;letter-spacing:.28em;font-size:12px;color:var(--terra)}
+
+.cover{padding:70px 0 50px;border-bottom:1px solid var(--line)}
+.cover h1{font-size:clamp(36px,6.5vw,64px);font-weight:900;color:var(--ink);margin-top:14px}
+.cover .sub{font-size:18px;color:var(--ink-soft);margin-top:16px;max-width:680px}
+.back{display:inline-block;margin-top:22px;font-size:14px;color:var(--ink-soft);text-decoration:underline;text-decoration-color:rgba(42,32,23,.3);text-underline-offset:3px}
+.back:hover{color:var(--terra)}
+
+section{padding:54px 0}
+.section-head{margin-bottom:30px;max-width:740px}
+.section-head h2{font-size:clamp(26px,4vw,40px);margin-top:8px}
+.section-head p{color:var(--ink-soft);margin-top:12px;font-size:17px}
+.rule{height:2px;width:48px;background:var(--terra);margin:0 0 4px;border-radius:2px}
+
+.box{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px 24px;box-shadow:var(--shadow);margin-bottom:18px}
+.box h3{font-size:20px;margin-bottom:8px}
+.box p{margin-top:8px}
+
+.locked{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+.locked .pill{background:var(--paper-2);border:1px solid var(--line);border-radius:30px;padding:8px 18px;font-size:14.5px}
+.locked .pill b{color:var(--ink-soft)}
+.locked .pill.open{background:#fbeede;border-color:var(--terra)}
+.locked .pill.open b{color:var(--terra)}
+
+.cmp{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--paper-2);border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+.cmp th{background:var(--ink);color:var(--paper);text-align:left;padding:13px 16px;font-family:'Fraunces',serif;font-weight:600;font-size:13px;letter-spacing:.05em}
+.cmp td{padding:13px 16px;border-top:1px solid var(--line);vertical-align:top}
+.cmp td:first-child{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);width:22%}
+.cmp td.win{color:var(--olive);font-weight:600}
+.cmp .star{color:var(--ochre);font-weight:600}
+
+.opt-card{background:#fffdf7;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--shadow);margin-bottom:24px;position:relative}
+.opt-card .label{font-family:'Fraunces',serif;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.18em;padding:5px 14px;border-radius:30px;display:inline-block;margin-bottom:14px;color:#fff}
+.opt-card .label.top{background:var(--olive)}
+.opt-card .label.charm{background:var(--rose)}
+.opt-card .label.simple{background:var(--sea)}
+.opt-card h3{font-size:28px;margin-bottom:8px}
+.opt-card .tag{font-size:16px;color:var(--ink-soft);font-style:italic;margin-bottom:18px}
+.opt-card .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;margin-top:16px}
+.opt-card .grid h4{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:var(--terra);margin-bottom:6px;font-weight:600}
+.opt-card .grid p{font-size:15px}
+.opt-card .verdict{background:var(--paper-2);border-left:4px solid var(--ochre);padding:14px 18px;border-radius:0 12px 12px 0;font-size:15.5px;margin-top:22px}
+.opt-card .verdict b{color:var(--ochre)}
+
+.brief{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.brief .b{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:18px}
+.brief .b h4{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:6px}
+.brief .b p{font-size:14.5px;color:var(--ink-soft)}
+
+.reco{background:var(--ink);color:#e8dcc7;padding:36px 30px;border-radius:18px;margin-top:18px}
+.reco h3{color:#f3d27e;font-size:24px;font-family:'Fraunces',serif;font-weight:600;margin-bottom:14px}
+.reco p{font-size:16px;opacity:.92;margin-bottom:12px;color:#e8dcc7}
+.reco p:last-child{margin-bottom:0}
+
+footer{background:var(--ink);color:#e8dcc7;padding:36px 0;margin-top:40px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+footer h3{color:#f3d27e;font-family:'Fraunces',serif;font-weight:600;font-size:20px}
+footer p{font-size:14px;opacity:.8;margin-top:4px}
+footer a{color:#f3d27e;text-decoration:underline;text-underline-offset:3px}
+
+@media (max-width:680px){
+  .opt-card .grid{grid-template-columns:1fr}
+  section{padding:40px 0}
+  body{font-size:16px}
+  .cmp{font-size:13.5px}
+  .cmp td,.cmp th{padding:10px 12px}
+}
+</style>
+</head>
+<body>
+
+<header class="cover"><div class="wrap">
+  <div class="eyebrow">Mid-trip rethink</div>
+  <h1>Where for the middle three nights?</h1>
+  <p class="sub">Kate's Nîmes conference cancelled. We've got Wed Jun 17 – Sat Jun 20 to land somewhere new. Below: what's locked, what's open, and the three real options.</p>
+  <a class="back" href="index.html">← Back to the main packet</a>
+</div></header>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">The setup</div><h2>What's fixed, what's open</h2></div>
+  <div class="locked">
+    <span class="pill"><b>Locked:</b> Antibes · Jun 15–17 · 2 nights</span>
+    <span class="pill"><b>Locked:</b> Camargue · Jun 20–24 · 4 nights · non-refundable</span>
+    <span class="pill open"><b>Open:</b> Wed Jun 17 – Sat Jun 20 · 3 nights</span>
+  </div>
+  <div class="box" style="margin-top:26px">
+    <h3>What this means in practice</h3>
+    <p>Antibes is effectively locked (refund window closed). Camargue has been non-refundable since April. Only the 3-night middle is genuinely in play.</p>
+    <p><b>Cancellation deadline for the current Nîmes Airbnb:</b> Fri Jun 12, 4:00 PM CEST for a full refund. Partial refund through Wed Jun 17. Plenty of time, but worth not letting slip.</p>
+  </div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">At a glance</div><h2>Three serious options</h2>
+    <p>All three preserve Roman ruins for the kids (top brief: Allison and Charles are jazzed for Roman stuff). They differ in <i>how</i> Roman, <i>how</i> Van Gogh, and how much you drive.</p></div>
+  <table class="cmp">
+    <thead><tr><th>Criterion</th><th>Arles</th><th>Saint-Rémy</th><th>Extend Antibes</th></tr></thead>
+    <tbody>
+      <tr><td>Roman ruins on-site</td><td class="win">Arena · theatre · Alyscamps · baths</td><td class="win">Walk through Glanum + Les Antiques</td><td>None (day-trip from Camargue)</td></tr>
+      <tr><td>Van Gogh on-site</td><td class="win">Painting-trail, yellow café, hospital courtyard</td><td class="win">Saint-Paul asylum — where he painted <i>Starry Night</i></td><td>None</td></tr>
+      <tr><td>Drive in (Antibes → base)</td><td>~ 3 h</td><td>~ 2 h 45</td><td class="win">0 (stay put)</td></tr>
+      <tr><td>Drive out (base → Camargue)</td><td class="win">~ 45 min</td><td>~ 1 h 15</td><td>~ 3 h 45 with Aix stop</td></tr>
+      <tr><td>Total Jun 17–20 driving</td><td>~ 3 h 45 (split)</td><td>~ 4 h (split)</td><td>~ 3 h 45 (one go)</td></tr>
+      <tr><td>Town size</td><td>Small city · ~50k</td><td>Village · ~10k</td><td>Resort town · ~75k</td></tr>
+      <tr><td>Evenings feel like</td><td>Buzzy, lots of restaurants</td><td>Quiet, village square</td><td>Riviera beach town</td></tr>
+      <tr><td>Standout nearby extras</td><td>Pont du Gard 25 min · Nîmes 35 min · Les Baux 30 min</td><td>Les Baux + Carrières de Lumières 15 min · Avignon 30 min · Arles 30 min</td><td>Île Sainte-Marguerite ferry · Cap d'Antibes · hill villages</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Option 1</div><h2>Arles</h2></div>
+  <div class="opt-card">
+    <span class="label top">Top pick</span>
+    <h3>Move the base to Arles</h3>
+    <p class="tag">The closest thing to a like-for-like Nîmes swap. Same Roman tier, shorter drive to Camargue, Van Gogh trail as a bonus, and the Sat Jun 20 plan we already had becomes "wake up and check out."</p>
+    <div class="grid">
+      <div>
+        <h4>Roman</h4>
+        <p>UNESCO arena (smaller than Nîmes but same impact), Roman theatre, Cryptoporticus (underground galleries — kid-fun), Alyscamps necropolis, Thermes de Constantin. The whole circuit is walkable in an afternoon.</p>
+      </div>
+      <div>
+        <h4>Van Gogh</h4>
+        <p>City-run trail with reproduction panels at the actual painting spots — Café Van Gogh on Place du Forum (the yellow café), Espace Van Gogh (the hospital courtyard). Fondation Vincent van Gogh runs rotating shows.</p>
+      </div>
+      <div>
+        <h4>Day trips</h4>
+        <p>Pont du Gard 25 min · Nîmes 35 min (so you can still see the arena) · Les Baux + Carrières de Lumières 30 min · the Camargue starts at your doorstep.</p>
+      </div>
+      <div>
+        <h4>Catch</h4>
+        <p>Buzzy small city — summer Saturday market gets crowded. Mid-June heat is real (28–32 °C). Restaurants are good but not vast.</p>
+      </div>
+    </div>
+    <div class="verdict"><b>Why it could win:</b> nothing is lost from the Nîmes plan; several things are gained (Van Gogh, ~15 min less driving to Camargue, the Sat stop comes free). Lowest-regret swap.</div>
+  </div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Option 2</div><h2>Saint-Rémy-de-Provence</h2></div>
+  <div class="opt-card">
+    <span class="label charm">Charmer pick</span>
+    <h3>Smaller. More concentrated. Possibly more magical for the kids.</h3>
+    <p class="tag">Glanum + Van Gogh's asylum + Les Baux 15 minutes away. Quieter than Arles, but the kid-stuff is denser — and weirder-in-a-good-way.</p>
+    <div class="grid">
+      <div>
+        <h4>Roman</h4>
+        <p><b>Glanum</b> — an actual excavated Greco-Roman town. You walk down ancient streets past temples, houses, baths. Different feel from "look at an arena from outside" — more like walking through a buried world. Plus <b>Les Antiques</b> right next door: a Roman triumphal arch and funerary monument.</p>
+      </div>
+      <div>
+        <h4>Van Gogh</h4>
+        <p><b>Saint-Paul-de-Mausole</b> — the asylum where he was treated and painted <i>Starry Night</i> (among ~150 other works). You see his reconstructed room, walk the wheat-field garden he painted, see views from his window. For kids who already know Starry Night, this could be the trip memory.</p>
+      </div>
+      <div>
+        <h4>Day trips</h4>
+        <p><b>Les Baux-de-Provence</b> 15 min — dramatic hilltop fortress kids can climb on. <b>Carrières de Lumières</b> right there: immersive art projection inside an old bauxite quarry (rotating shows; Van Gogh has been featured in past seasons — check what's running). Avignon 30 min, Arles 30 min if you want both.</p>
+      </div>
+      <div>
+        <h4>Catch</h4>
+        <p>Smaller town = fewer restaurant options, quieter evenings. ~30 min farther from Camargue than Arles. If you want urban buzz, this isn't it.</p>
+      </div>
+    </div>
+    <div class="verdict"><b>Why it could win:</b> Glanum + the Starry-Night asylum + a fortress castle 15 minutes away is an unusually well-stocked menu for kids 8 and 10. Quiet evenings in a Provençal village can be the thing you remember a year later.</div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Option 3</div><h2>Extend Antibes</h2></div>
+  <div class="opt-card">
+    <span class="label simple">Simple pick</span>
+    <h3>Stay 5 nights on the Riviera. One big drive at the end.</h3>
+    <p class="tag">Skip the middle move. Two extra beach days, a possible Lérins or hill-village add, then a single ~4-hour drive to Camargue with the Aix lunch we already planned.</p>
+    <div class="grid">
+      <div>
+        <h4>What it adds</h4>
+        <p>Two more Riviera days — slower pace, no mid-trip packing. Use them for the Île Sainte-Marguerite ferry (pine-forest island + Iron-Mask fort), a hill village (Èze or St-Paul-de-Vence), Cannes, or just more beach.</p>
+      </div>
+      <div>
+        <h4>What it costs</h4>
+        <p>You lose the dedicated Roman/Van Gogh base. Both become day trips from the Camargue (Arles 45 min, Nîmes 1 h, Pont du Gard 1 h 15). Doable — but you'd be using Camargue beach time to drive.</p>
+      </div>
+      <div>
+        <h4>Drive math</h4>
+        <p>Total driving across the trip works out the same as the current plan: instead of two ~3-hour drives, you do one ~3 h 45 drive on Sat Jun 20 with Aix-en-Provence as the lunch stop.</p>
+      </div>
+      <div>
+        <h4>Booking wrinkle</h4>
+        <p>Need to ask Guillaume (current Antibes host) if the place is free Jun 17–20. If not, you'd book a second place in Antibes / Juan-les-Pins / Cap d'Antibes for those nights.</p>
+      </div>
+    </div>
+    <div class="verdict"><b>Why it could win:</b> if everyone's tired by day 3 — jetlag, heat — more beach and zero packing is a real gift. Roman becomes a Camargue day trip; perfectly fine, just less immersive.</div>
+  </div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Considered and ranked lower</div><h2>The almost-picks</h2></div>
+  <div class="brief">
+    <div class="b"><h4>Avignon</h4><p>Palais des Papes (medieval) + Pont du Gard + Orange (the best-preserved Roman theatre in Europe, 30 min). Strong on history. But city is bigger/busier, and it's not closer to Camargue than Nîmes was.</p></div>
+    <div class="b"><h4>Aix-en-Provence</h4><p>Most beautiful Provençal town. Cuts the Antibes drive in half. But light on Roman ruins — you'd still day-trip to Nîmes / Arles for the kids' Roman fix.</p></div>
+    <div class="b"><h4>Orange</h4><p>The Roman theatre is jaw-dropping. But the town itself is small, fewer dinner options, and it's ~1 h 50 from Camargue.</p></div>
+    <div class="b"><h4>Split stays (e.g. 2 Arles + 1 Antibes)</h4><p>Avoid. Single-night stays are check-in/out hassle without time to enjoy the place. Better to commit to one base.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Brian's read</div><h2>My recommendation</h2></div>
+  <div class="reco">
+    <h3>Arles, unless the quieter shape calls.</h3>
+    <p>Arles is the safest excellent choice — closest to "like-for-like Nîmes swap," shorter drive to Camargue, Van Gogh trail bonus, and it folds the Sat Jun 20 plan into the base. Lowest regret.</p>
+    <p>Saint-Rémy is the equally-strong but differently-shaped pick: Glanum + the actual Starry-Night asylum + Les Baux 15 minutes away. Quieter evenings; possibly the better kid memory. Honest tie on kid value; tiebreaker is what we want the evenings to feel like.</p>
+    <p>Extend-Antibes is the right call if either of us is craving slow-down — but only if losing the dedicated Roman/Van Gogh base doesn't bother us.</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><h3>Decide tonight · cancel Nîmes by Fri Jun 12</h3><p>Free-cancel deadline: Jun 12, 4:00 PM CEST. Tell me which way and I'll update the main packet + start the new booking.</p></div>
+  <a href="index.html">← Main packet</a>
+</div></footer>
+
+</body>
+</html>
