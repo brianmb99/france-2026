@@ -67,6 +67,17 @@ section{padding:54px 0}
 .deep-link{display:inline-block;margin-top:16px;font-family:'Fraunces',serif;font-weight:600;font-size:15px;color:var(--terra);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;transition:.15s}
 .deep-link:hover{color:var(--ink)}
 
+.quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.quick-card{background:#fffdf7;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.quick-card .label{font-family:'Fraunces',serif;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.18em;padding:5px 14px;border-radius:30px;display:inline-block;margin-bottom:14px;color:#fff;align-self:flex-start}
+.quick-card .label.top{background:var(--olive)}
+.quick-card .label.charm{background:var(--rose)}
+.quick-card .label.simple{background:var(--sea)}
+.quick-card h3{font-size:24px;margin-bottom:12px}
+.quick-card p{font-size:15px;flex:1;color:var(--ink-soft);line-height:1.55}
+.quick-card .deep-link{margin-top:16px;align-self:flex-start;font-size:14px}
+@media (max-width:850px){.quick-grid{grid-template-columns:1fr}}
+
 .reco{background:var(--ink);color:#e8dcc7;padding:36px 30px;border-radius:18px;margin-top:18px}
 .reco h3{color:#f3d27e;font-size:24px;font-family:'Fraunces',serif;font-weight:600;margin-bottom:14px}
 .reco p{font-size:16px;opacity:.92;margin-bottom:12px;color:#e8dcc7}
@@ -125,88 +136,26 @@ footer a{color:#f3d27e;text-decoration:underline;text-underline-offset:3px}
 </div></section>
 
 <section><div class="wrap">
-  <div class="section-head"><div class="rule"></div><div class="eyebrow">Option 1</div><h2>Arles</h2></div>
-  <div class="opt-card">
-    <span class="label top">Top pick</span>
-    <h3>Move the base to Arles</h3>
-    <p class="tag">The closest thing to a like-for-like Nîmes swap. Same Roman tier, shorter drive to Camargue, Van Gogh trail as a bonus, and the Sat Jun 20 plan we already had becomes "wake up and check out."</p>
-    <div class="grid">
-      <div>
-        <h4>Roman</h4>
-        <p>UNESCO arena (smaller than Nîmes but same impact), Roman theatre, Cryptoporticus (underground galleries — kid-fun), Alyscamps necropolis, Thermes de Constantin. The whole circuit is walkable in an afternoon.</p>
-      </div>
-      <div>
-        <h4>Van Gogh</h4>
-        <p>City-run trail with reproduction panels at the actual painting spots — Café Van Gogh on Place du Forum (the yellow café), Espace Van Gogh (the hospital courtyard). Fondation Vincent van Gogh runs rotating shows.</p>
-      </div>
-      <div>
-        <h4>Day trips</h4>
-        <p>Pont du Gard 25 min · Nîmes 35 min (so you can still see the arena) · Les Baux + Carrières de Lumières 30 min · the Camargue starts at your doorstep.</p>
-      </div>
-      <div>
-        <h4>Catch</h4>
-        <p>Buzzy small city — summer Saturday market gets crowded. Mid-June heat is real (28–32 °C). Restaurants are good but not vast.</p>
-      </div>
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">The three options</div><h2>Quick flavor</h2><p>One paragraph each. Click through for full activities, day-trip picks, and Airbnb candidates.</p></div>
+  <div class="quick-grid">
+    <div class="quick-card">
+      <span class="label top">Top pick</span>
+      <h3>Arles</h3>
+      <p>The closest thing to a like-for-like Nîmes swap. Same Roman tier (arena, theatre, cryptoporticus), Van Gogh trail through the city, 45 min to the Camargue, and the Sat Jun 20 plan we already had becomes "wake up and check out." Lowest-regret pick.</p>
+      <a class="deep-link" href="arles.html">Full Arles page →</a>
     </div>
-    <div class="verdict"><b>Why it could win:</b> nothing is lost from the Nîmes plan; several things are gained (Van Gogh, ~15 min less driving to Camargue, the Sat stop comes free). Lowest-regret swap.</div>
-    <a class="deep-link" href="arles.html">Full Arles page — activities, day trips, Airbnb candidates →</a>
-  </div>
-</div></section>
-
-<section style="background:var(--paper-2)"><div class="wrap">
-  <div class="section-head"><div class="rule"></div><div class="eyebrow">Option 2</div><h2>Saint-Rémy-de-Provence</h2></div>
-  <div class="opt-card">
-    <span class="label charm">Charmer pick</span>
-    <h3>Smaller. More concentrated. Possibly more magical for the kids.</h3>
-    <p class="tag">Glanum + Van Gogh's asylum + Les Baux 15 minutes away. Quieter than Arles, but the kid-stuff is denser — and weirder-in-a-good-way.</p>
-    <div class="grid">
-      <div>
-        <h4>Roman</h4>
-        <p><b>Glanum</b> — an actual excavated Greco-Roman town. You walk down ancient streets past temples, houses, baths. Different feel from "look at an arena from outside" — more like walking through a buried world. Plus <b>Les Antiques</b> right next door: a Roman triumphal arch and funerary monument.</p>
-      </div>
-      <div>
-        <h4>Van Gogh</h4>
-        <p><b>Saint-Paul-de-Mausole</b> — the asylum where he was treated and painted <i>Starry Night</i> (among ~150 other works). You see his reconstructed room, walk the wheat-field garden he painted, see views from his window. For kids who already know Starry Night, this could be the trip memory.</p>
-      </div>
-      <div>
-        <h4>Day trips</h4>
-        <p><b>Les Baux-de-Provence</b> 15 min — dramatic hilltop fortress kids can climb on. <b>Carrières de Lumières</b> right there: immersive art projection inside an old bauxite quarry (rotating shows; Van Gogh has been featured in past seasons — check what's running). Avignon 30 min, Arles 30 min if you want both.</p>
-      </div>
-      <div>
-        <h4>Catch</h4>
-        <p>Smaller town = fewer restaurant options, quieter evenings. ~30 min farther from Camargue than Arles. If you want urban buzz, this isn't it.</p>
-      </div>
+    <div class="quick-card">
+      <span class="label charm">Charmer pick</span>
+      <h3>Saint-Rémy</h3>
+      <p>Quieter village. Walk through Glanum (excavated Greco-Roman town), stand where Van Gogh painted Starry Night, fortress + Carrières de Lumières light show 15 minutes away. Denser kid-magic, sleepier evenings, ~30 min farther from Camargue than Arles.</p>
+      <a class="deep-link" href="saint-remy.html">Full Saint-Rémy page →</a>
     </div>
-    <div class="verdict"><b>Why it could win:</b> Glanum + the Starry-Night asylum + a fortress castle 15 minutes away is an unusually well-stocked menu for kids 8 and 10. Quiet evenings in a Provençal village can be the thing you remember a year later.</div>
-    <a class="deep-link" href="saint-remy.html">Full Saint-Rémy page — activities, day trips, Airbnb candidates →</a>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <div class="section-head"><div class="rule"></div><div class="eyebrow">Option 3</div><h2>Extend Antibes</h2></div>
-  <div class="opt-card">
-    <span class="label simple">Simple pick</span>
-    <h3>Stay 5 nights on the Riviera. One big drive at the end.</h3>
-    <p class="tag">Skip the middle move. Two extra beach days, a possible Lérins or hill-village add, then a single ~4-hour drive to Camargue with the Aix lunch we already planned.</p>
-    <div class="grid">
-      <div>
-        <h4>What it adds</h4>
-        <p>Two more Riviera days — slower pace, no mid-trip packing. Use them for the Île Sainte-Marguerite ferry (pine-forest island + Iron-Mask fort), a hill village (Èze or St-Paul-de-Vence), Cannes, or just more beach.</p>
-      </div>
-      <div>
-        <h4>What it costs</h4>
-        <p>You lose the dedicated Roman/Van Gogh base. Both become day trips from the Camargue (Arles 45 min, Nîmes 1 h, Pont du Gard 1 h 15). Doable — but you'd be using Camargue beach time to drive.</p>
-      </div>
-      <div>
-        <h4>Drive math</h4>
-        <p>Total driving across the trip works out the same as the current plan: instead of two ~3-hour drives, you do one ~3 h 45 drive on Sat Jun 20 with Aix-en-Provence as the lunch stop.</p>
-      </div>
-      <div>
-        <h4>Booking</h4>
-        <p>✓ Confirmed available — Guillaume has the place free Jun 17–20. Same Airbnb, same host, same key — just extend the existing booking by 3 nights.</p>
-      </div>
+    <div class="quick-card">
+      <span class="label simple">Simple pick</span>
+      <h3>Extend Antibes</h3>
+      <p>Stay 5 nights on the Riviera. Two extra beach days, no mid-trip move, then one ~3 h 45 drive Sat with the Aix lunch already planned. ✓ Guillaume has the place free. Roman/Van Gogh becomes a day trip from Camargue.</p>
+      <a class="deep-link" href="index.html#antibes">Antibes in the main packet →</a>
     </div>
-    <div class="verdict"><b>Why it could win:</b> if everyone's tired by day 3 — jetlag, heat — more beach and zero packing is a real gift. Roman becomes a Camargue day trip; perfectly fine, just less immersive.</div>
   </div>
 </div></section>
 
