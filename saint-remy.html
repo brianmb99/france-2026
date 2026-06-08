@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saint-Rémy-de-Provence — Wed Jun 17 → Sat Jun 20</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+:root{--paper:#f6efe0;--paper-2:#efe5d1;--ink:#2a2017;--ink-soft:#5b4d3d;--terra:#c2552f;--ochre:#cf9526;--olive:#69734a;--sea:#256079;--rose:#cf7d80;--line:rgba(42,32,23,.16);--shadow:0 18px 40px -20px rgba(42,32,23,.45);}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Spectral',Georgia,serif;background:var(--paper);color:var(--ink);line-height:1.62;font-size:17px;-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle at 12% 8%, rgba(207,149,38,.07), transparent 40%),radial-gradient(circle at 88% 30%, rgba(37,96,121,.06), transparent 45%),radial-gradient(circle at 50% 100%, rgba(194,85,47,.05), transparent 55%);}
+.wrap{max-width:1060px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;letter-spacing:-.01em}
+.eyebrow{font-family:'Fraunces',serif;font-weight:600;text-transform:uppercase;letter-spacing:.28em;font-size:12px;color:var(--rose)}
+
+.cover{padding:70px 0 40px;border-bottom:1px solid var(--line)}
+.cover h1{font-size:clamp(40px,7vw,72px);font-weight:900;color:var(--ink);margin-top:12px}
+.cover .sub{font-size:18px;color:var(--ink-soft);margin-top:14px;max-width:680px}
+.cover .meta{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+.cover .meta span{background:var(--paper-2);border:1px solid var(--line);border-radius:40px;padding:6px 16px;font-size:14px}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--ink-soft);text-decoration:underline;text-decoration-color:rgba(42,32,23,.3);text-underline-offset:3px;margin-right:20px}
+.back:hover{color:var(--terra)}
+
+section{padding:60px 0}
+.section-head{margin-bottom:30px;max-width:760px}
+.section-head h2{font-size:clamp(28px,4.5vw,44px);margin-top:8px}
+.section-head p{color:var(--ink-soft);margin-top:12px;font-size:17px}
+.rule{height:2px;width:48px;background:var(--rose);margin:0 0 4px;border-radius:2px}
+
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.opt{background:#fffdf7;border:1px solid var(--line);border-radius:14px;position:relative;transition:.18s;box-shadow:0 6px 18px -14px rgba(42,32,23,.5);overflow:hidden;display:flex;flex-direction:column}
+.opt:hover{transform:translateY(-3px);box-shadow:0 16px 30px -18px rgba(42,32,23,.55)}
+.opt .thumb{display:block;height:90px;background:linear-gradient(135deg,#d9cbac,#e9dcc2);position:relative}
+.opt .thumb.gh{background:linear-gradient(135deg,#cf9526,#cf7d80)}
+.opt .thumb.roman{background:linear-gradient(135deg,#9c4a2a,#cf9526)}
+.opt .thumb.nature{background:linear-gradient(135deg,#69734a,#a3aa7a)}
+.opt .thumb.trip{background:linear-gradient(135deg,#5b4d8d,#cf7d80)}
+.opt .thumb.food{background:linear-gradient(135deg,#9c3f48,#cf7d80)}
+.opt .body2{padding:15px 18px 17px}
+.opt .tag{font-family:'Fraunces',serif;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.13em;padding:3px 9px;border-radius:20px;display:inline-block;margin-bottom:10px}
+.t-roman{background:#f5e1cf;color:#9c4a2a}.t-nature{background:#e2e8d4;color:#54603a}
+.t-trip{background:#e8ddef;color:#6b4a85}.t-food{background:#f3dede;color:#9c3f48}
+.t-views{background:#dde7ea;color:#2a5e72}.t-culture{background:#e9e2d2;color:#7a6320}
+.t-kids{background:#f6e4cf;color:#b06a18}.t-vg{background:#fbeede;color:var(--terra)}
+.opt h5{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:6px;line-height:1.2}
+.opt h5 a{color:inherit;text-decoration:none;border-bottom:1.5px solid transparent;transition:.15s}
+.opt h5 a:hover{color:var(--terra);border-bottom-color:var(--terra)}
+.opt p{font-size:14.5px;color:var(--ink-soft);line-height:1.5}
+.opt .note{display:block;margin-top:9px;font-size:13px;color:var(--ink);font-style:italic;border-top:1px dashed var(--line);padding-top:8px}
+.opt .note b{font-style:normal;color:var(--terra)}
+.star{position:absolute;top:10px;left:12px;z-index:3;font-size:14px;color:#fff;background:var(--ochre);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+
+.menu-title{font-family:'Fraunces',serif;font-weight:600;font-size:22px;margin:8px 0 16px;display:flex;align-items:center;gap:10px}
+.menu-title::after{content:"";flex:1;height:1px;background:var(--line)}
+
+.stay{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0 0 8px}
+.stay .box{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+.stay .box h4{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--olive);margin-bottom:8px;font-weight:600}
+.stay .box .name{font-family:'Fraunces',serif;font-weight:600;font-size:18px;margin-bottom:6px}
+.stay .box .price{font-family:'Fraunces',serif;font-weight:600;font-size:16px;color:var(--terra);margin-bottom:6px}
+.stay .box p{font-size:14.5px;color:var(--ink-soft);line-height:1.5}
+.stay .box a{display:inline-block;margin-top:14px;font-size:14px;color:var(--terra);text-decoration:underline;text-underline-offset:3px}
+.stay .box.splurge{border-color:var(--rose);background:#fbeede}
+
+.flag{background:#fbeede;border-left:4px solid var(--terra);padding:14px 18px;border-radius:0 12px 12px 0;font-size:15.5px;margin-top:20px}
+.flag b{color:var(--terra)}
+
+footer{background:var(--ink);color:#e8dcc7;padding:40px 0;margin-top:40px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+footer h3{color:#f3d27e;font-family:'Fraunces',serif;font-weight:600;font-size:20px}
+footer a{color:#f3d27e;text-decoration:underline;text-underline-offset:3px;margin-left:18px}
+
+@media (max-width:680px){.stay{grid-template-columns:1fr}section{padding:44px 0}body{font-size:16px}}
+</style>
+</head>
+<body>
+
+<header class="cover"><div class="wrap">
+  <div class="eyebrow">Mid-trip option · charmer pick</div>
+  <h1>Saint-Rémy-de-Provence</h1>
+  <p class="sub">Quiet Provençal village. Walk through Glanum like a buried Roman town. Stand where Van Gogh painted Starry Night. Castle and immersive art show 15 minutes away.</p>
+  <div class="meta">
+    <span>Wed Jun 17 → Sat Jun 20</span>
+    <span>3 nights</span>
+    <span>~ 2 h 45 from Antibes</span>
+    <span>~ 1 h 15 to Saintes-Maries</span>
+  </div>
+  <div>
+    <a class="back" href="options.html">← Back to options</a>
+    <a class="back" href="index.html">← Main packet</a>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Where we'd stay</div><h2>Airbnb candidates</h2><p>Both available for the dates; click through for photos and reviews.</p></div>
+  <div class="stay">
+    <div class="box">
+      <div>
+        <h4>The value pick</h4>
+        <div class="name">Nice apartment</div>
+        <div class="price">$605 total</div>
+        <p>Straightforward 3-night apartment stay. Lowest cost of any option across both bases.</p>
+      </div>
+      <a href="https://www.airbnb.com/rooms/48205307?adults=2&amp;check_in=2026-06-17&amp;check_out=2026-06-20&amp;children=2" target="_blank" rel="noopener">View on Airbnb ↗</a>
+    </div>
+    <div class="box splurge">
+      <div>
+        <h4>The splurge</h4>
+        <div class="name">Villa with pool + pool table</div>
+        <div class="price">$2,000 total</div>
+        <p>Pool for the heat, pool table for the rainy moment or the late-afternoon kid energy. Three +1k vs the apartment — but the trip has zero pool otherwise.</p>
+      </div>
+      <a href="https://www.airbnb.com/rooms/1613084922900631473" target="_blank" rel="noopener">View on Airbnb ↗</a>
+    </div>
+  </div>
+  <div class="flag"><b>Trade-off in plain terms:</b> the villa is ~$1,400 more than the apartment, ~5× more per night than the Camargue is costing. With kids 8 and 10 in 30 °C heat, a pool is a real thing — but it's a $1,400-real thing.</div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Roman</div><h2>Walk through an actual Roman town</h2></div>
+  <div class="opts">
+    <div class="opt"><span class="star">★</span><a class="thumb roman" href="https://www.google.com/maps/search/?api=1&amp;query=Site%20Arch%C3%A9ologique%20de%20Glanum" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-roman">Roman / Kids</span><h5><a href="https://www.site-glanum.fr/" target="_blank" rel="noopener">Glanum</a></h5><p>The standout. An excavated Greco-Roman town just south of Saint-Rémy — you walk down real streets past temples, houses, baths, fountains. Different feel from looking at an arena: more like stepping into a buried world.</p><span class="note"><b>Plan</b> ~ 2 h · open daily ~9:30 am–6:30 pm · ~€8 adult, free under 18 · combo ticket with Hôtel de Sade.</span></div></div>
+
+    <div class="opt"><a class="thumb roman" href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Antiques%20Saint-R%C3%A9my-de-Provence" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-roman">Roman / Free</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Antiques%20Saint-R%C3%A9my-de-Provence" target="_blank" rel="noopener">Les Antiques</a></h5><p>Right at the entrance to the Glanum site, free in the open air: a Roman triumphal arch (~10 BC) and the Mausoleum of the Julii — one of the best-preserved Roman funerary monuments anywhere.</p><span class="note"><b>Combo</b> with Glanum, 5 min walk apart.</span></div></div>
+
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=H%C3%B4tel%20de%20Sade%20Saint-R%C3%A9my" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-culture">Museum</span><h5><a href="https://www.hoteldesade.fr/" target="_blank" rel="noopener">Hôtel de Sade</a></h5><p>Town museum displaying the actual artifacts excavated from Glanum — statues, inscriptions, mosaics. Smart combo right after walking the site itself.</p><span class="note">~€3 adult · ~30–45 min.</span></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Van Gogh</div><h2>Where Starry Night was painted</h2></div>
+  <div class="opts">
+    <div class="opt"><span class="star">★</span><a class="thumb gh" href="https://www.google.com/maps/search/?api=1&amp;query=Saint-Paul-de-Mausole%20Saint-R%C3%A9my" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-vg">Van Gogh / Kids</span><h5><a href="https://www.saintpauldemausole.fr/" target="_blank" rel="noopener">Saint-Paul-de-Mausole</a></h5><p>The 12th-c. monastery-turned-asylum where Van Gogh stayed May 1889 – May 1890 and painted ~150 works including <i>Starry Night</i>, <i>Irises</i>, <i>Wheatfield with Crows</i>. You see his reconstructed room, walk the wheat-field garden he painted, look out his window. For kids who already know Starry Night, this is the trip's centerpiece moment.</p><span class="note"><b>Plan</b> ~ 1 h · ~€8 adult · 10 min walk from town centre · combine with Glanum (they're next to each other).</span></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Day trips · short drives</div><h2>The Saint-Rémy radius</h2><p>Geography is the hidden gift here — the Alpilles + Avignon + Arles + Pont du Gard are all under an hour.</p></div>
+  <div class="opts">
+    <div class="opt"><span class="star">★</span><a class="thumb trip" href="https://www.google.com/maps/search/?api=1&amp;query=Les%20Baux-de-Provence" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-kids">Castle / Kids</span><h5><a href="https://www.chateau-baux-provence.com/" target="_blank" rel="noopener">Les Baux-de-Provence</a></h5><p>Dramatic clifftop village + ruined Château des Baux you can climb on. Catapults, siege engines, panoramic views over the Alpilles. Voted one of France's most beautiful villages for a reason.</p><span class="note"><b>Drive</b> ≈ 15 min · ~€11 adult, ~€9 kid · easy half-day.</span></div></div>
+
+    <div class="opt"><span class="star">★</span><a class="thumb trip" href="https://www.google.com/maps/search/?api=1&amp;query=Carri%C3%A8res%20de%20Lumi%C3%A8res%20Les%20Baux" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-kids">Immersive art / Kids</span><h5><a href="https://www.carrieres-lumieres.com/" target="_blank" rel="noopener">Carrières de Lumières</a></h5><p>An old bauxite quarry turned into a massive projection room — paintings 10 metres tall on the walls, set to music. You walk through the art. Rotating shows by year (Van Gogh has been featured in past seasons — check what's running for 2026). Genuine kid-wow.</p><span class="note"><b>Drive</b> ≈ 15 min · at Les Baux · ~€15 adult, ~€11 kid · pair with the castle for a strong day.</span></div></div>
+
+    <div class="opt"><a class="thumb trip" href="https://www.google.com/maps/search/?api=1&amp;query=Palais%20des%20Papes%20Avignon" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-trip">History / Kids</span><h5><a href="https://palais-des-papes.com/" target="_blank" rel="noopener">Avignon</a></h5><p>Palais des Papes (medieval popes' palace) and the famous half-bridge from the children's song <i>Sur le pont d'Avignon</i>. Big enough for a real city-feeling afternoon.</p><span class="note"><b>Drive</b> ≈ 30 min.</span></div></div>
+
+    <div class="opt"><a class="thumb roman" href="https://www.google.com/maps/search/?api=1&amp;query=Ar%C3%A8nes%20d'Arles" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-roman">Roman / Art</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Ar%C3%A8nes%20d'Arles" target="_blank" rel="noopener">Arles</a></h5><p>Roman arena + theatre + Van Gogh painting-trail panels. The other "big" option — you can still day-trip there from Saint-Rémy if you want both flavours.</p><span class="note"><b>Drive</b> ≈ 30 min.</span></div></div>
+
+    <div class="opt"><a class="thumb roman" href="https://www.google.com/maps/search/?api=1&amp;query=Pont%20du%20Gard" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-roman">Roman / Water</span><h5><a href="https://pontdugard.fr/" target="_blank" rel="noopener">Pont du Gard</a></h5><p>The colossal Roman aqueduct. Swim and picnic in the Gardon below, kids' interactive space + film up top.</p><span class="note"><b>Drive</b> ≈ 45 min.</span></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">In town</div><h2>Saint-Rémy itself</h2></div>
+  <div class="opts">
+    <div class="opt"><a class="thumb" href="https://www.google.com/maps/search/?api=1&amp;query=Place%20de%20la%20R%C3%A9publique%20Saint-R%C3%A9my-de-Provence" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-views">Walk</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Vieille%20Ville%20Saint-R%C3%A9my-de-Provence" target="_blank" rel="noopener">Old town stroll</a></h5><p>Narrow streets, hidden courtyards, fountains, Provençal honey-stone buildings. Walkable in an hour or stretched into a half-day with café stops.</p></div></div>
+
+    <div class="opt"><a class="thumb food" href="https://www.google.com/maps/search/?api=1&amp;query=Saint-R%C3%A9my-de-Provence%20Wednesday%20market" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-food">Market</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Saint-R%C3%A9my-de-Provence%20Wednesday%20market" target="_blank" rel="noopener">Wednesday morning market</a></h5><p>One of the best in Provence — ~150 stalls fill the whole town centre. Olive oils, soaps, lavender, produce, cheese.</p><span class="note"><b>Catch:</b> 8 am–1 pm Wednesdays only — we'd arrive Wed afternoon and miss it. Thursday and Friday have nothing equivalent. Plan to graze it as one of the first things Thu morning? No — it's gone.</span></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Eat</div><h2>Dinner spots</h2></div>
+  <div class="opts">
+    <div class="opt"><a class="thumb food" href="https://www.google.com/maps/search/?api=1&amp;query=restaurants%20Place%20de%20la%20R%C3%A9publique%20Saint-R%C3%A9my-de-Provence" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-food">Bistros</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=restaurants%20Place%20de%20la%20R%C3%A9publique%20Saint-R%C3%A9my-de-Provence" target="_blank" rel="noopener">Place de la République &amp; Bd Mirabeau</a></h5><p>The central square and the boulevard ringing the old town are where the bistros cluster. Pick by terrace vibe — most do Provençal classics (daube, lamb from the Alpilles, herbes-de-Provence everything).</p></div></div>
+
+    <div class="opt"><a class="thumb food" href="https://www.google.com/maps/search/?api=1&amp;query=L%27Estagnol%20Saint-R%C3%A9my-de-Provence" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-food">Provençal</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=L%27Estagnol%20Saint-R%C3%A9my-de-Provence" target="_blank" rel="noopener">L'Estagnol</a></h5><p>Long-running Saint-Rémy bistro on a shaded square — local Provençal cooking, terrace dining, kid-friendly. Worth a booking.</p></div></div>
+
+    <div class="opt"><a class="thumb food" href="https://www.google.com/maps/search/?api=1&amp;query=Saint-R%C3%A9my-de-Provence%20restaurants%20kid-friendly" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-food">Pizza / Easy</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Saint-R%C3%A9my-de-Provence%20restaurants%20kid-friendly" target="_blank" rel="noopener">Easy / kid-friendly dinner</a></h5><p>The town has several casual pizzerias and brasseries for low-stakes dinners. Walk the old town and pick a terrace.</p></div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><h3>Saint-Rémy · 3 nights · the charmer</h3><p style="font-size:14px;opacity:.8;margin-top:6px">Glanum + Saint-Paul-de-Mausole + Les Baux + Carrières de Lumières within 15 minutes.</p></div>
+  <div>
+    <a href="options.html">← Options</a>
+    <a href="arles.html">Arles →</a>
+    <a href="index.html">Main packet</a>
+  </div>
+</div></footer>
+
+</body>
+</html>
