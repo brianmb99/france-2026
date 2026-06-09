@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cassis &amp; the Calanques — Wed Jun 17 → Sat Jun 20</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+:root{--paper:#f6efe0;--paper-2:#efe5d1;--ink:#2a2017;--ink-soft:#5b4d3d;--terra:#c2552f;--ochre:#cf9526;--olive:#69734a;--sea:#256079;--rose:#cf7d80;--line:rgba(42,32,23,.16);--shadow:0 18px 40px -20px rgba(42,32,23,.45);}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Spectral',Georgia,serif;background:var(--paper);color:var(--ink);line-height:1.62;font-size:17px;-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle at 12% 8%, rgba(207,149,38,.07), transparent 40%),radial-gradient(circle at 88% 30%, rgba(37,96,121,.08), transparent 45%),radial-gradient(circle at 50% 100%, rgba(37,96,121,.05), transparent 55%);}
+.wrap{max-width:1060px;margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;letter-spacing:-.01em}
+.eyebrow{font-family:'Fraunces',serif;font-weight:600;text-transform:uppercase;letter-spacing:.28em;font-size:12px;color:var(--sea)}
+
+.cover{padding:70px 0 40px;border-bottom:1px solid var(--line)}
+.cover h1{font-size:clamp(40px,7vw,72px);font-weight:900;color:var(--ink);margin-top:12px}
+.cover .sub{font-size:18px;color:var(--ink-soft);margin-top:14px;max-width:680px}
+.cover .meta{margin-top:20px;display:flex;flex-wrap:wrap;gap:10px}
+.cover .meta span{background:var(--paper-2);border:1px solid var(--line);border-radius:40px;padding:6px 16px;font-size:14px}
+.back{display:inline-block;margin-top:24px;font-size:14px;color:var(--ink-soft);text-decoration:underline;text-decoration-color:rgba(42,32,23,.3);text-underline-offset:3px;margin-right:20px}
+.back:hover{color:var(--terra)}
+.cover-note{margin-top:18px;color:var(--ink-soft);font-size:14.5px;font-style:italic;border-left:3px solid var(--ochre);padding:6px 0 6px 14px;max-width:680px}
+.cover-note b{color:var(--ochre);font-style:normal}
+
+section{padding:60px 0}
+.section-head{margin-bottom:30px;max-width:760px}
+.section-head h2{font-size:clamp(28px,4.5vw,44px);margin-top:8px}
+.section-head p{color:var(--ink-soft);margin-top:12px;font-size:17px}
+.rule{height:2px;width:48px;background:var(--sea);margin:0 0 4px;border-radius:2px}
+
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.opt{background:#fffdf7;border:1px solid var(--line);border-radius:14px;position:relative;transition:.18s;box-shadow:0 6px 18px -14px rgba(42,32,23,.5);overflow:hidden;display:flex;flex-direction:column}
+.opt:hover{transform:translateY(-3px);box-shadow:0 16px 30px -18px rgba(42,32,23,.55)}
+.opt .thumb{display:block;height:90px;background:linear-gradient(135deg,#d9cbac,#e9dcc2);position:relative}
+.opt .thumb.sea{background:linear-gradient(135deg,#1f5066,#3d7e93)}
+.opt .thumb.cliff{background:linear-gradient(135deg,#5b4d3d,#a3aa7a)}
+.opt .thumb.wine{background:linear-gradient(135deg,#6b4a85,#cf7d80)}
+.opt .thumb.city{background:linear-gradient(135deg,#9c4a2a,#cf9526)}
+.opt .thumb.food{background:linear-gradient(135deg,#9c3f48,#cf7d80)}
+.opt .body2{padding:15px 18px 17px}
+.opt .tag{font-family:'Fraunces',serif;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.13em;padding:3px 9px;border-radius:20px;display:inline-block;margin-bottom:10px}
+.t-roman{background:#f5e1cf;color:#9c4a2a}.t-nature{background:#e2e8d4;color:#54603a}
+.t-trip{background:#e8ddef;color:#6b4a85}.t-food{background:#f3dede;color:#9c3f48}
+.t-views{background:#dde7ea;color:#2a5e72}.t-culture{background:#e9e2d2;color:#7a6320}
+.t-kids{background:#f6e4cf;color:#b06a18}.t-beach{background:#dcebef;color:#1f5066}
+.t-wine{background:#e8ddef;color:#6b4a85}
+.opt h5{font-family:'Fraunces',serif;font-size:18px;font-weight:600;margin-bottom:6px;line-height:1.2}
+.opt h5 a{color:inherit;text-decoration:none;border-bottom:1.5px solid transparent;transition:.15s}
+.opt h5 a:hover{color:var(--terra);border-bottom-color:var(--terra)}
+.opt p{font-size:14.5px;color:var(--ink-soft);line-height:1.5}
+.opt .note{display:block;margin-top:9px;font-size:13px;color:var(--ink);font-style:italic;border-top:1px dashed var(--line);padding-top:8px}
+.opt .note b{font-style:normal;color:var(--terra)}
+.star{position:absolute;top:10px;left:12px;z-index:3;font-size:14px;color:#fff;background:var(--ochre);width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+
+.search-box{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px}
+.search-box h4{font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--olive);margin-bottom:8px;font-weight:600}
+.search-box p{font-size:15px;color:var(--ink-soft);line-height:1.55;margin-bottom:14px}
+.search-box a{display:inline-block;background:var(--sea);color:#fff;font-family:'Fraunces',serif;font-weight:600;font-size:15px;padding:10px 18px;border-radius:30px;text-decoration:none;transition:.15s}
+.search-box a:hover{background:var(--ink)}
+
+.flag{background:#fbeede;border-left:4px solid var(--terra);padding:14px 18px;border-radius:0 12px 12px 0;font-size:15.5px;margin-top:20px}
+.flag b{color:var(--terra)}
+.flag.sea{background:#dde7ea;border-left-color:var(--sea)}
+.flag.sea b{color:var(--sea)}
+
+footer{background:var(--ink);color:#e8dcc7;padding:40px 0;margin-top:40px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
+footer h3{color:#f3d27e;font-family:'Fraunces',serif;font-weight:600;font-size:20px}
+footer a{color:#f3d27e;text-decoration:underline;text-underline-offset:3px;margin-left:18px}
+
+@media (max-width:680px){section{padding:44px 0}body{font-size:16px}}
+</style>
+</head>
+<body>
+
+<header class="cover"><div class="wrap">
+  <div class="eyebrow">Mid-trip option · scenery pick</div>
+  <h1>Cassis &amp; the Calanques</h1>
+  <p class="sub">Live next to the most dramatic coast in France. Boat into turquoise calanques, drive the Route des Crêtes at sunset, swim in cliff-walled coves. The "once you see it you can't unsee it" Mediterranean.</p>
+  <div class="meta">
+    <span>Wed Jun 17 → Sat Jun 20</span>
+    <span>3 nights</span>
+    <span>~ 2 h from Antibes</span>
+    <span>~ 2 h to Saintes-Maries</span>
+  </div>
+  <div class="cover-note"><b>Heads up:</b> beaches are pebble, not sand. Cassis is small and gets very crowded in summer — parking is notoriously hard. Roman/Van Gogh becomes longer day-trips from here (Arles is ~1 h 45 each way, not 45 min).</div>
+  <div>
+    <a class="back" href="options.html">← Back to options</a>
+    <a class="back" href="index.html">← Main packet</a>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Where we'd stay</div><h2>Airbnb candidates</h2><p>You haven't pre-sourced these yet. Quick browse with our dates and party below:</p></div>
+  <div class="search-box">
+    <h4>To browse</h4>
+    <p>Cassis itself is tiny — look for places walkable to the port, or just outside in nearby Roquefort-la-Bédoule if you want quieter and cheaper. Pricier than the other options in general; budget likely $800–1,500 for the 3 nights.</p>
+    <a href="https://www.airbnb.com/s/Cassis--France/homes?adults=2&amp;children=2&amp;checkin=2026-06-17&amp;checkout=2026-06-20" target="_blank" rel="noopener">Search Cassis on Airbnb ↗</a>
+  </div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">The Calanques</div><h2>The reason you'd come here</h2><p>Limestone cliffs into turquoise water. Boat in, hike in, or swim in. Some access is restricted in summer for fire/crowd reasons — worth checking before the day.</p></div>
+  <div class="opts">
+    <div class="opt"><span class="star">★</span><a class="thumb sea" href="https://www.google.com/maps/search/?api=1&amp;query=boat%20tour%20Calanques%20Cassis%20port" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-beach">Boat / Kids</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=boat%20tour%20Calanques%20Cassis%20port" target="_blank" rel="noopener">Calanques boat tour</a></h5><p>Easiest way to see them with kids — multiple operators run from Cassis port. Options range from 45 min (3 calanques) to 2 h (8+ calanques, including En-Vau). Some include swim stops. Book in advance in summer.</p><span class="note"><b>~€20–35 adult, kids half-ish.</b></span></div></div>
+
+    <div class="opt"><a class="thumb sea" href="https://www.google.com/maps/search/?api=1&amp;query=Calanque%20de%20Port-Miou%20Cassis" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-beach">Walk / Easy</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Calanque%20de%20Port-Miou%20Cassis" target="_blank" rel="noopener">Port-Miou (walkable from town)</a></h5><p>Closest calanque, ~25 min walk from Cassis port along a flat trail. Tucked, marina-feel, fewer crowds. Good first taste of what the others are like.</p><span class="note"><b>Free</b> · easy with kids.</span></div></div>
+
+    <div class="opt"><a class="thumb sea" href="https://www.google.com/maps/search/?api=1&amp;query=Calanque%20de%20Port-Pin" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-beach">Hike / Swim</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Calanque%20de%20Port-Pin" target="_blank" rel="noopener">Port-Pin</a></h5><p>~45 min walk past Port-Miou — small pine-fringed cove, swimmable, less developed. Solid kid-doable hike with a swim reward at the end.</p><span class="note"><b>Free</b> · plan for early morning in June heat.</span></div></div>
+
+    <div class="opt"><a class="thumb sea" href="https://www.google.com/maps/search/?api=1&amp;query=Calanque%20d'En-Vau" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-views">The icon · long hike</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Calanque%20d'En-Vau" target="_blank" rel="noopener">En-Vau (the famous one)</a></h5><p>The poster-child calanque — towering white cliffs, jewel-blue water. From Cassis it's a 2 h hike each way (rocky, exposed). Realistically: see it from the boat tour with the kids.</p><span class="note"><b>Hike with kids 8/10:</b> doable but hot, not for June afternoon.</span></div></div>
+
+    <div class="opt"><a class="thumb cliff" href="https://www.google.com/maps/search/?api=1&amp;query=Route%20des%20Cr%C3%AAtes%20Cassis%20La%20Ciotat" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-views">Drive / Sunset</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Route%20des%20Cr%C3%AAtes%20Cassis%20La%20Ciotat" target="_blank" rel="noopener">Route des Crêtes ★</a></h5><p>Clifftop road between Cassis and La Ciotat with Cap Canaille — one of the highest sea cliffs in France. Pullouts every few minutes for jaw-dropping views over the calanques. Best at sunset.</p><span class="note"><b>~1 h round trip</b> · do it as an after-dinner light drive.</span></div></div>
+  </div>
+  <div class="flag sea"><b>Summer access:</b> the most famous Marseille-side calanques (Sormiou, Morgiou) close to cars in summer due to fire risk — shuttle or hike only, and capped daily entries. From a Cassis base, you stick mostly to the Cassis-side calanques (Port-Miou, Port-Pin, En-Vau) which don't have that restriction — but the boat tours are the easy answer either way.</div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Cassis itself</div><h2>The town</h2></div>
+  <div class="opts">
+    <div class="opt"><a class="thumb sea" href="https://www.google.com/maps/search/?api=1&amp;query=Port%20de%20Cassis" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-views">Walk</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Port%20de%20Cassis" target="_blank" rel="noopener">Old port stroll</a></h5><p>Pastel houses around a working fishing harbour, lined with restaurants. Walk it morning (boats coming in) and evening (terraces full). 20 min end to end.</p></div></div>
+
+    <div class="opt"><a class="thumb sea" href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20de%20la%20Grande%20Mer%20Cassis" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-beach">Beach</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Plage%20de%20la%20Grande%20Mer%20Cassis" target="_blank" rel="noopener">Plage de la Grande Mer</a></h5><p>Town beach — pebbly, sheltered, walkable from the port. Kid-fine for swimming but bring water shoes (pebble underfoot is harsh).</p></div></div>
+
+    <div class="opt"><a class="thumb wine" href="https://www.google.com/maps/search/?api=1&amp;query=Cassis%20wine%20domaines" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-wine">Wine</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Cassis%20wine%20domaines" target="_blank" rel="noopener">Cassis AOC tasting</a></h5><p>Cassis has its own appellation, mostly whites and rosés (think marsanne, clairette). Several small domaines on the hillsides north of town offer tastings — Domaine du Bagnol and Clos Sainte-Magdeleine are well-known.</p><span class="note">Book ahead.</span></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Day trips · short</div><h2>What's around (the easy ones)</h2></div>
+  <div class="opts">
+    <div class="opt"><a class="thumb city" href="https://www.google.com/maps/search/?api=1&amp;query=MUCEM%20Marseille" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-culture">Big city / Museum</span><h5><a href="https://www.mucem.org/" target="_blank" rel="noopener">Marseille — MUCEM + Vieux Port</a></h5><p>MUCEM (Museum of European &amp; Mediterranean Civilisations) is interactive, modern, kid-friendly. Combine with Vieux Port, Notre-Dame de la Garde (the basilica on the hill with views over the city), and maybe Le Panier.</p><span class="note"><b>Drive</b> ≈ 30 min · easy full day.</span></div></div>
+
+    <div class="opt"><a class="thumb city" href="https://www.google.com/maps/search/?api=1&amp;query=Aix-en-Provence" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-trip">Town</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Cours%20Mirabeau%20Aix-en-Provence" target="_blank" rel="noopener">Aix-en-Provence</a></h5><p>Quintessential Provençal town — Cours Mirabeau, fountains, Place Richelme food market. Easy lunch + 2-hour stroll.</p><span class="note"><b>Drive</b> ≈ 45 min.</span></div></div>
+
+    <div class="opt"><a class="thumb city" href="https://www.google.com/maps/search/?api=1&amp;query=La%20Ciotat%20port" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-trip">Town</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Ciotat%20port" target="_blank" rel="noopener">La Ciotat</a></h5><p>Just east — birthplace of cinema (the Lumière brothers' first film was shot at the train station here in 1895). Working port, sandy beaches if you want a break from pebbles.</p><span class="note"><b>Drive</b> ≈ 15 min · or via the Route des Crêtes.</span></div></div>
+
+    <div class="opt"><a class="thumb wine" href="https://www.google.com/maps/search/?api=1&amp;query=Bandol%20wine%20country" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-wine">Wine</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=Bandol%20wine%20country" target="_blank" rel="noopener">Bandol</a></h5><p>Famous Mourvèdre-based reds and rosés. Several domaines welcome visitors. Pair with lunch in the town of Bandol or Cassis on the way back.</p><span class="note"><b>Drive</b> ≈ 30 min.</span></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Day trips · long</div><h2>Roman / Van Gogh — the trade-off</h2><p>The honest cost of choosing Cassis: the Roman/Van Gogh thread you've built with the kids becomes long day-trips instead of a lived experience. Each of these is 1 h 30 – 1 h 45 each way.</p></div>
+  <div class="opts">
+    <div class="opt"><a class="thumb city" href="https://www.google.com/maps/search/?api=1&amp;query=Ar%C3%A8nes%20d'Arles" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-roman">Roman / Van Gogh</span><h5><a href="arles.html">Arles</a></h5><p>Roman arena + Van Gogh trail. From Cassis you'd see it midday (worst light, worst heat). Doable but you're sacrificing a Cassis day to it.</p><span class="note"><b>Drive</b> ≈ 1 h 45 each way.</span></div></div>
+
+    <div class="opt"><a class="thumb city" href="https://www.google.com/maps/search/?api=1&amp;query=Avignon" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-trip">Medieval</span><h5><a href="https://palais-des-papes.com/" target="_blank" rel="noopener">Avignon</a></h5><p>Palais des Papes + Pont d'Avignon. Same trade-off — far enough that it eats a Cassis day.</p><span class="note"><b>Drive</b> ≈ 1 h 30.</span></div></div>
+
+    <div class="opt"><a class="thumb city" href="https://www.google.com/maps/search/?api=1&amp;query=Pont%20du%20Gard" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-roman">Roman / Water</span><h5><a href="https://pontdugard.fr/" target="_blank" rel="noopener">Pont du Gard</a></h5><p>The Roman aqueduct + river swim. Same long drive, but the swim-in-the-Gardon factor partly justifies it on a hot day.</p><span class="note"><b>Drive</b> ≈ 1 h 45.</span></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--paper-2)"><div class="wrap">
+  <div class="section-head"><div class="rule"></div><div class="eyebrow">Eat</div><h2>Dinner spots</h2></div>
+  <div class="opts">
+    <div class="opt"><a class="thumb food" href="https://www.google.com/maps/search/?api=1&amp;query=restaurants%20port%20Cassis" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-food">Port terraces</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=restaurants%20port%20Cassis" target="_blank" rel="noopener">Port-side bistros</a></h5><p>The harbour is ringed with restaurants — seafood, Provençal bistro food, pizza, watching boats come and go. Pricier than inland Provence; the location is the premium.</p></div></div>
+
+    <div class="opt"><a class="thumb food" href="https://www.google.com/maps/search/?api=1&amp;query=bouillabaisse%20Marseille" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-food">Local classic</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=bouillabaisse%20Marseille" target="_blank" rel="noopener">Bouillabaisse (one night)</a></h5><p>The Marseille-Cassis coast's signature fish stew. Order it once during the stay. Several Cassis restaurants do a respectable version — kids may find it odd, but the broth-and-bread part is approachable.</p></div></div>
+
+    <div class="opt"><a class="thumb food" href="https://www.google.com/maps/search/?api=1&amp;query=La%20Vieille%20Auberge%20Cassis" target="_blank" rel="noopener"></a><div class="body2"><span class="tag t-food">Easy / Family</span><h5><a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Vieille%20Auberge%20Cassis" target="_blank" rel="noopener">Casual / kid-friendly</a></h5><p>The pedestrian streets behind the port have lower-key places — pizza, simple bistro food. Easier wins for kid-dinners than the port-front terraces.</p></div></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><h3>Cassis · 3 nights · the scenery pick</h3><p style="font-size:14px;opacity:.8;margin-top:6px">Calanques + Cap Canaille + Cassis wine. Costs: pricier accommodations, pebble beaches, Roman/Van Gogh becomes long day trips.</p></div>
+  <div>
+    <a href="options.html">← Options</a>
+    <a href="arles.html">Arles</a>
+    <a href="saint-remy.html">Saint-Rémy</a>
+    <a href="index.html">Main packet</a>
+  </div>
+</div></footer>
+
+</body>
+</html>
