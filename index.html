@@ -28,7 +28,14 @@ section{padding:74px 0}
 .section-head h2{font-size:clamp(30px,5vw,52px);margin-top:10px}
 .section-head p{color:var(--ink-soft);margin-top:14px;font-size:18px}
 .rule{height:2px;width:54px;background:var(--terra);margin:0 0 4px;border-radius:2px}
-.nav{position:sticky;top:0;z-index:40;background:rgba(246,239,224,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{position:sticky;top:44px;z-index:40;background:rgba(246,239,224,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.page-nav{position:sticky;top:0;z-index:50;background:#2a2017;border-bottom:1px solid rgba(243,210,126,.15)}
+.page-nav .wrap{display:flex;gap:4px;flex-wrap:wrap;align-items:center;padding:10px 26px;max-width:1060px;margin:0 auto}
+.page-nav .brand{font-family:'Fraunces',serif;font-weight:900;color:#f3d27e;margin-right:auto;font-size:15px;text-decoration:none;letter-spacing:-.01em}
+.page-nav a{font-size:13px;text-decoration:none;color:#e8dcc7;padding:6px 14px;border-radius:30px;letter-spacing:.03em;transition:.18s;font-family:'Spectral',serif}
+.page-nav a:hover{background:rgba(243,210,126,.12);color:#f3d27e}
+.page-nav a.active{background:#f3d27e;color:#2a2017;font-weight:600}
+@media (max-width:600px){.page-nav .wrap{padding:8px 16px;gap:2px}.page-nav a{padding:5px 10px;font-size:12px}.page-nav .brand{font-size:14px}}
 .nav .wrap{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding-top:12px;padding-bottom:12px}
 .nav b{font-family:'Fraunces',serif;font-weight:900;letter-spacing:-.01em;margin-right:auto;font-size:17px}
 .nav a{font-size:13px;text-decoration:none;color:var(--ink-soft);padding:6px 12px;border-radius:30px;letter-spacing:.03em;transition:.2s}
@@ -43,7 +50,7 @@ section{padding:74px 0}
 .leg .drive{display:inline-block;font-size:13px;color:var(--ink-soft);font-style:italic;margin-top:2px}
 .leg .what a{color:inherit;text-decoration:underline;text-decoration-color:rgba(42,32,23,.3);text-underline-offset:3px;text-decoration-thickness:1.2px;transition:.15s}
 .leg .what a:hover{text-decoration-color:var(--terra);color:var(--terra)}
-section,[id]{scroll-margin-top:70px}
+section,[id]{scroll-margin-top:100px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
 .fact{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px 22px 20px;box-shadow:var(--shadow)}
 .fact h4{font-size:14px;text-transform:uppercase;letter-spacing:.14em;color:var(--terra);margin-bottom:10px;font-weight:600}
@@ -115,6 +122,15 @@ footer p{font-size:14px;opacity:.8}
 </style>
 </head>
 <body>
+
+<nav class="page-nav"><div class="wrap">
+  <a class="brand" href="index.html">Provence '26</a>
+  <a href="index.html" class="active">Main packet</a>
+  <a href="options.html">Options</a>
+  <a href="arles.html">Arles</a>
+  <a href="saint-remy.html">Saint-Rémy</a>
+  <a href="cassis.html">Cassis</a>
+</div></nav>
 
 <header class="cover">
   <div class="photo"><img src="https://pontdugard.fr/sites/default/files/2024-07/348_Pont_du_Gard_BRL_23_09_08_%C2%A9LaurentRebelle_0.jpg" alt="Pont du Gard" onerror="this.style.display='none'"></div>

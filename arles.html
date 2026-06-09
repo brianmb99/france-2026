@@ -73,9 +73,26 @@ footer h3{color:#f3d27e;font-family:'Fraunces',serif;font-weight:600;font-size:2
 footer a{color:#f3d27e;text-decoration:underline;text-underline-offset:3px;margin-left:18px}
 
 @media (max-width:680px){.stay{grid-template-columns:1fr}section{padding:44px 0}body{font-size:16px}}
+
+.page-nav{position:sticky;top:0;z-index:50;background:#2a2017;border-bottom:1px solid rgba(243,210,126,.15)}
+.page-nav .wrap{display:flex;gap:4px;flex-wrap:wrap;align-items:center;padding:10px 26px;max-width:1060px;margin:0 auto}
+.page-nav .brand{font-family:'Fraunces',serif;font-weight:900;color:#f3d27e;margin-right:auto;font-size:15px;text-decoration:none;letter-spacing:-.01em}
+.page-nav a{font-size:13px;text-decoration:none;color:#e8dcc7;padding:6px 14px;border-radius:30px;letter-spacing:.03em;transition:.18s;font-family:'Spectral',serif}
+.page-nav a:hover{background:rgba(243,210,126,.12);color:#f3d27e}
+.page-nav a.active{background:#f3d27e;color:#2a2017;font-weight:600}
+@media (max-width:600px){.page-nav .wrap{padding:8px 16px;gap:2px}.page-nav a{padding:5px 10px;font-size:12px}.page-nav .brand{font-size:14px}}
 </style>
 </head>
 <body>
+
+<nav class="page-nav"><div class="wrap">
+  <a class="brand" href="index.html">Provence '26</a>
+  <a href="index.html">Main packet</a>
+  <a href="options.html">Options</a>
+  <a href="arles.html" class="active">Arles</a>
+  <a href="saint-remy.html">Saint-Rémy</a>
+  <a href="cassis.html">Cassis</a>
+</div></nav>
 
 <header class="cover"><div class="wrap">
   <div class="eyebrow">Mid-trip option · top pick</div>
