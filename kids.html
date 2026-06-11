@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kids' Provence Picture Trip - June 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Nunito:wght@600;800;900&display=swap');
+:root{--paper:#fff7e2;--ink:#24313a;--soft:#66747c;--sun:#f3b43f;--tomato:#e56b4f;--sea:#1d8eb0;--leaf:#6f9f5b;--plum:#8d5fa8;--pink:#e88aa4;--card:#fffdf6;--line:rgba(36,49,58,.16);--shadow:0 22px 50px -28px rgba(36,49,58,.45)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.03;letter-spacing:0}
+.page-nav{position:sticky;top:0;z-index:60;background:#24313a;border-bottom:1px solid rgba(255,255,255,.12)}
+.page-nav .wrap{display:flex;gap:4px;flex-wrap:wrap;align-items:center;padding:10px 24px}
+.page-nav .brand{font-family:'Fraunces',serif;font-weight:900;color:#ffd36a;margin-right:auto;font-size:15px;text-decoration:none}
+.page-nav a{font-size:13px;text-decoration:none;color:#fff7e2;padding:6px 14px;border-radius:30px;transition:.18s}
+.page-nav a:hover{background:rgba(255,255,255,.12);color:#ffd36a}
+.page-nav a.active{background:#ffd36a;color:#24313a;font-weight:900}
+.hero{min-height:82vh;display:grid;align-items:end;position:relative;overflow:hidden;background:#163f52}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(1.1) contrast(1.03)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,35,43,.08) 0%,rgba(16,35,43,.12) 42%,rgba(16,35,43,.86) 100%)}
+.hero-inner{position:relative;z-index:2;color:#fff7e2;padding:0 24px 54px;max-width:1160px;margin:0 auto;width:100%}
+.kicker{font-weight:900;text-transform:uppercase;letter-spacing:.16em;color:#ffd36a;font-size:13px}
+.hero h1{font-size:clamp(48px,10vw,116px);font-weight:900;color:#fff7e2;margin-top:10px;text-shadow:0 8px 36px rgba(0,0,0,.32)}
+.hero p{font-size:clamp(18px,2.3vw,25px);max-width:760px;margin-top:18px;color:#fff1cf;font-weight:800}
+.stamp-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.stamp{background:rgba(255,247,226,.15);border:1px solid rgba(255,247,226,.42);border-radius:999px;padding:8px 15px;font-weight:900;backdrop-filter:blur(4px)}
+.mini-nav{position:sticky;top:45px;z-index:50;background:rgba(255,247,226,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.mini-nav .wrap{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-top:11px;padding-bottom:11px}
+.mini-nav b{font-family:'Fraunces',serif;font-weight:900;margin-right:auto}
+.mini-nav a{color:var(--ink);text-decoration:none;font-weight:900;font-size:14px;padding:7px 13px;border-radius:999px}
+.mini-nav a:nth-child(2){background:#d9f2f8}.mini-nav a:nth-child(3){background:#ffe0ce}.mini-nav a:nth-child(4){background:#e6f0d8}.mini-nav a:nth-child(5){background:#f6ddf5}
+section{padding:66px 0}
+.destination{border-top:8px solid var(--sea);background:linear-gradient(180deg,rgba(255,255,255,.45),rgba(255,255,255,0))}
+.destination.arles{border-color:var(--tomato)}
+.destination.camargue{border-color:var(--leaf)}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,420px);gap:26px;align-items:end;margin-bottom:28px}
+.section-head h2{font-size:clamp(36px,6vw,66px);font-weight:900}
+.section-head p{font-size:18px;color:var(--soft);font-weight:800}
+.photo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.tile{grid-column:span 4;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:100%}
+.tile.big{grid-column:span 6}.tile.wide{grid-column:span 6}
+.tile img{width:100%;height:260px;object-fit:cover;display:block;background:#d7e7eb}
+.tile.big img,.tile.wide img{height:390px}
+.tile .body{padding:18px 19px 20px}
+.tag{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;border-radius:999px;padding:5px 10px;margin-bottom:10px;color:#fff}
+.sea{background:var(--sea)}.sun{background:var(--sun);color:#49331a}.red{background:var(--tomato)}.green{background:var(--leaf)}.purple{background:var(--plum)}.pink{background:var(--pink);color:#4c2635}
+.tile h3{font-size:27px;margin-bottom:6px}
+.tile p{color:var(--soft);font-weight:800;font-size:16px}
+.route{background:#24313a;color:#fff7e2}
+.route .section-head p{color:#d9eef3}
+.route-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.route-card{position:relative;min-height:320px;border-radius:8px;overflow:hidden;box-shadow:var(--shadow);display:flex;align-items:flex-end;background:#37535d}
+.route-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.route-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,20,.05),rgba(20,20,20,.74))}
+.route-card .body{position:relative;z-index:2;padding:24px;color:#fff7e2}
+.route-card h3{font-size:34px;color:#fff7e2}.route-card p{margin-top:8px;font-weight:800;color:#fff1cf}
+.closer{padding:50px 0;background:#fffdf6;border-top:1px solid var(--line)}
+.closer h2{font-size:clamp(30px,5vw,52px)}.closer p{color:var(--soft);font-weight:800}
+@media (max-width:860px){.section-head{grid-template-columns:1fr}.photo-grid,.route-cards{display:block}.tile,.tile.big,.tile.wide,.route-card{margin-bottom:16px}.tile img,.tile.big img,.tile.wide img{height:285px}.mini-nav{top:85px}.hero{min-height:76vh}}
+@media (max-width:560px){.page-nav .wrap{padding:8px 16px}.page-nav a{font-size:12px;padding:5px 9px}.wrap{padding:0 18px}section{padding:48px 0}.tile img,.tile.big img,.tile.wide img{height:235px}.route-card{min-height:260px}.stamp{font-size:14px}}
+</style>
+</head>
+<body>
+
+<nav class="page-nav"><div class="wrap">
+  <a class="brand" href="index.html">Provence '26</a>
+  <a href="index.html">Main packet</a>
+  <a href="kids.html" class="active">Kids</a>
+  <a href="options.html">Options</a>
+  <a href="arles.html">Arles</a>
+  <a href="saint-remy.html">Saint-Remy</a>
+  <a href="cassis.html">Cassis</a>
+</div></nav>
+
+<header class="hero">
+  <img src="https://www.provence-camargue-tourisme.com/app/uploads/2025/03/terre-argence-cheval-camargue-10.webp" alt="White Camargue horses near the sea">
+  <div class="hero-inner">
+    <div class="kicker">Picture version for the kids</div>
+    <h1>France Adventure Map</h1>
+    <p>Three home bases, lots of water, Roman ruins you can climb, painting spots to hunt for, pink birds, and horses on the beach.</p>
+    <div class="stamp-row"><span class="stamp">Antibes: beach + Picasso</span><span class="stamp">Arles: Romans + Van Gogh</span><span class="stamp">Camargue: flamingos + horses</span></div>
+  </div>
+</header>
+
+<nav class="mini-nav"><div class="wrap">
+  <b>Jump to</b>
+  <a href="#antibes">Antibes</a>
+  <a href="#arles">Arles</a>
+  <a href="#camargue">Camargue</a>
+  <a href="#road">Road stops</a>
+</div></nav>
+
+<section id="antibes" class="destination">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker" style="color:var(--sea)">Destination 1</div><h2>Antibes & the Riviera</h2></div>
+      <p>First stop: sleep in the old town, swim by the ramparts, ride a boat to an island, and see Picasso art inside a castle.</p>
+    </div>
+    <div class="photo-grid">
+      <article class="tile big"><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1419009055504016970/original/78ecffb2-1115-4f81-ac9e-59423835058e.jpeg" alt="Antibes Airbnb preview"><div class="body"><span class="tag sea">Home base</span><h3>Old-town apartment</h3><p>Our Antibes place is tucked in the pedestrian streets, close to snacks, boats, gelato, and evening wandering.</p></div></article>
+      <article class="tile wide"><img src="https://www.antibesjuanlespins.com/sites/antibes/files/styles/ogimage/public/page/21072016-20a0561.jpg?itok=1hebo1IA" alt="Plage de la Gravette in Antibes"><div class="body"><span class="tag sun">Beach</span><h3>Plage de la Gravette</h3><p>A sandy little cove right next to town. Good first swim after the plane.</p></div></article>
+      <article class="tile"><img src="https://www.antibesjuanlespins.com/sites/antibes/files/styles/ogimage/public/page/22072016-20a0129.jpg?itok=BYemYe78" alt="Picasso Museum in Antibes"><div class="body"><span class="tag purple">Museum</span><h3>Picasso in a castle</h3><p>The Picasso Museum is in Chateau Grimaldi, with sea views right outside.</p></div></article>
+      <article class="tile"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ile%20Sainte%20Marguerite%20-%20Flickr%20-%20berniedup.jpg?width=900" alt="Ile Sainte-Marguerite near Cannes"><div class="body"><span class="tag green">Boat trip</span><h3>Island swim mission</h3><p>Short ferry, pine forest, coves, and the fort from the Man in the Iron Mask story.</p></div></article>
+      <article class="tile"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cDovL21lZGlhcy50b3VyaXNtLXN5c3RlbS5jb20vOS9iLzQ5OTAyOF9mb3J0LWNhcnJlLTIwMTYtMDJqX2Jyb3NzZXQuanBn/image.jpg" alt="Fort Carre in Antibes"><div class="body"><span class="tag red">Fort</span><h3>Star-shaped fort</h3><p>Fort Carre has ramparts, harbor views, and a shape that looks like it was drawn for a treasure map.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="arles" class="destination arles">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker" style="color:var(--tomato)">Destination 2</div><h2>Arles</h2></div>
+      <p>The Roman-and-Van-Gogh stop: an amphitheatre, underground tunnels, yellow cafe, and a painting hunt through town.</p>
+    </div>
+    <div class="photo-grid">
+      <article class="tile big"><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1568904327418081464/original/7f449966-1cff-4ef2-b565-f285314b9440.jpeg" alt="Arles Airbnb preview"><div class="body"><span class="tag sun">Home base</span><h3>Historic-center house</h3><p>Our Arles house is walking distance to the arena and Place du Forum, so this leg should feel easy on foot.</p></div></article>
+      <article class="tile wide"><img src="https://photos.smugmug.com/Provence-Lovers/Arles/n-K2dFh4/Cryptoportiques/i-StPQMkR/0/NT98wSPMNmfQ6mkDhHfR6GstcJwVM42rwRLhQp5fz/L/inside-cryptoportiques-arles-L.jpg" alt="Cryptoporticus underground tunnels in Arles"><div class="body"><span class="tag purple">Tunnels</span><h3>Roman underground</h3><p>The cryptoporticus is a cool, shadowy set of Roman galleries under the old forum. Very solid kid-wow.</p></div></article>
+      <article class="tile"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/France-Arles-ArenaFromEast-2025-09-s.jpg?width=1000" alt="Roman amphitheatre in Arles"><div class="body"><span class="tag red">Roman</span><h3>Climb the arena</h3><p>Walk the seats of a real Roman amphitheatre and imagine the crowd roaring.</p></div></article>
+      <article class="tile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_%28Place_du_Forum%29_1888.jpg/960px-Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_%28Place_du_Forum%29_1888.jpg" alt="Van Gogh Cafe Terrace at Night painting"><div class="body"><span class="tag sun">Van Gogh</span><h3>Find the yellow cafe</h3><p>Use the painting like a treasure map, then stand in Place du Forum and compare the scene.</p></div></article>
+      <article class="tile"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Van_Gogh_-_Garten_des_Hospitals_in_Arles1.jpeg/960px-Van_Gogh_-_Garten_des_Hospitals_in_Arles1.jpeg" alt="Van Gogh garden of the hospital in Arles painting"><div class="body"><span class="tag green">Painting hunt</span><h3>Garden from a painting</h3><p>Espace Van Gogh has a courtyard garden restored to look like the scene he painted there.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="camargue" class="destination camargue">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker" style="color:var(--leaf)">Destination 3</div><h2>Camargue</h2></div>
+      <p>The relaxed beach-and-wildlife chapter: ping-pong at the house, flamingos, white horses, and sandy beach days.</p>
+    </div>
+    <div class="photo-grid">
+      <article class="tile big"><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTY3NjYwMDA%3D/original/fd77af53-5911-415b-9953-96c82eca2fe7.jpeg" alt="Ping-pong table at the Saintes-Maries Airbnb"><div class="body"><span class="tag sun">Home base</span><h3>Ping-pong house</h3><p>The Saintes-Maries house has a playroom garage with a ping-pong table. Big rainy-hour / hot-afternoon win.</p></div></article>
+      <article class="tile wide"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/001%20Greater%20flamingo%20in%20flight%20in%20the%20Camargue%20Photo%20by%20Giles%20Laurent.jpg?width=1000" alt="Greater flamingo in the Camargue"><div class="body"><span class="tag pink">Wildlife</span><h3>Flamingo search</h3><p>At Pont de Gau, boardwalks go right through flamingo ponds. Pink birds, loud calls, big wings.</p></div></article>
+      <article class="tile"><img src="https://www.provence-camargue-tourisme.com/app/uploads/2025/03/terre-argence-cheval-camargue-10.webp" alt="Camargue white horses"><div class="body"><span class="tag green">Horses</span><h3>Ride by beach and marsh</h3><p>Camargue horses are famous: white, sturdy, and used by local gardians around the wetlands.</p></div></article>
+      <article class="tile"><img src="https://api.cloudly.space/resize/crop/1200/627/60/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMTcyLzE4NS8yNTIxMzM1Ni5qcGc=/image.jpg" alt="Beach at Saintes-Maries-de-la-Mer"><div class="body"><span class="tag sea">Beach</span><h3>Saintes-Maries beach</h3><p>The easy everyday beach, close enough to go when everyone just wants sand and water.</p></div></article>
+      <article class="tile"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Aigues%20Mortes%20-%20a%20fortified%20town%20%2849711092361%29.jpg?width=900" alt="Fortified town of Aigues-Mortes"><div class="body"><span class="tag purple">Walls</span><h3>Castle-wall day</h3><p>Aigues-Mortes has complete ramparts, plus salt flats nearby that can turn pink in the sun.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="road" class="route">
+  <div class="wrap">
+    <div class="section-head">
+      <div><div class="kicker">On-the-road bonuses</div><h2>Two drive-day wow stops</h2></div>
+      <p>Not extra home bases, just good places to break up the drives.</p>
+    </div>
+    <div class="route-cards">
+      <article class="route-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/En-Vau_calanque_1.jpg/1280px-En-Vau_calanque_1.jpg" alt="Calanque d'En-Vau near Cassis"><div class="body"><h3>Cassis & the Calanques</h3><p>Lunch by the port, then a boat ride past white cliffs and electric-blue coves.</p></div></article>
+      <article class="route-card"><img src="https://pontdugard.fr/sites/default/files/2024-07/348_Pont_du_Gard_BRL_23_09_08_%C2%A9LaurentRebelle_0.jpg" alt="Pont du Gard"><div class="body"><h3>Pont du Gard</h3><p>Roman bridge, picnic food from the market, and a river swim under something 2,000 years old.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<footer class="closer">
+  <div class="wrap">
+    <h2>Three places. Big pictures. Easy choices.</h2>
+    <p>Antibes for sea, Arles for stories, Camargue for animals and beach days.</p>
+  </div>
+</footer>
+
+</body>
+</html>
