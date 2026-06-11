@@ -49,8 +49,8 @@ section{padding:66px 0}
 .dot.antibes{background:var(--sea)}.dot.arles{background:var(--tomato)}.dot.camargue{background:var(--leaf)}
 .map-images{display:grid;gap:12px}
 .map-photo{overflow:hidden;border-radius:8px;border:1px solid var(--line);background:#dff3f7;box-shadow:0 14px 30px -24px rgba(36,49,58,.5)}
-.map-photo img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}
-.map-photo.detail img{aspect-ratio:16/11}
+.map-photo img{width:100%;display:block;aspect-ratio:16/10;object-fit:contain;background:#dff3f7}
+.map-photo.detail img{aspect-ratio:16/11;object-fit:contain}
 .map-photo figcaption{padding:9px 12px;color:var(--soft);font-size:13px;font-weight:900;background:#fffdf6}
 .photo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
 .tile{grid-column:span 4;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:100%}
