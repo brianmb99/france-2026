@@ -47,9 +47,11 @@ section{padding:66px 0}
 .map-list div{display:flex;gap:10px;align-items:center;font-weight:900;color:var(--ink)}
 .dot{width:14px;height:14px;border-radius:50%;display:inline-block;box-shadow:0 0 0 4px rgba(36,49,58,.08)}
 .dot.antibes{background:var(--sea)}.dot.arles{background:var(--tomato)}.dot.camargue{background:var(--leaf)}
-.france-map{width:100%;max-width:500px;margin:0 auto;display:block}
-.map-label{font-family:'Nunito',Arial,sans-serif;font-size:20px;font-weight:900;fill:var(--ink)}
-.map-small{font-size:15px;fill:var(--soft)}
+.map-images{display:grid;gap:12px}
+.map-photo{overflow:hidden;border-radius:8px;border:1px solid var(--line);background:#dff3f7;box-shadow:0 14px 30px -24px rgba(36,49,58,.5)}
+.map-photo img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}
+.map-photo.detail img{aspect-ratio:16/11}
+.map-photo figcaption{padding:9px 12px;color:var(--soft);font-size:13px;font-weight:900;background:#fffdf6}
 .photo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
 .tile{grid-column:span 4;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:100%}
 .tile.big{grid-column:span 6}.tile.wide{grid-column:span 6}
@@ -117,20 +119,10 @@ section{padding:66px 0}
           <div><span class="dot camargue"></span>Camargue - flamingos, horses, beach</div>
         </div>
       </div>
-      <svg class="france-map" viewBox="0 0 520 520" role="img" aria-label="Simple map of France showing Antibes, Arles, and Camargue">
-        <rect width="520" height="520" rx="28" fill="#dff3f7"/>
-        <path d="M182 48 315 38 420 116 438 214 397 286 424 383 336 463 235 448 169 486 95 418 111 323 62 267 96 184 78 108Z" fill="#fff7e2" stroke="#24313a" stroke-width="6" stroke-linejoin="round"/>
-        <path d="M292 432 C334 420 377 395 424 383" fill="none" stroke="#1d8eb0" stroke-width="8" stroke-linecap="round"/>
-        <path d="M305 410 C327 387 346 360 366 330" fill="none" stroke="#e56b4f" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round"/>
-        <circle cx="363" cy="358" r="11" fill="#e56b4f" stroke="#fffdf6" stroke-width="5"/>
-        <circle cx="392" cy="393" r="11" fill="#6f9f5b" stroke="#fffdf6" stroke-width="5"/>
-        <circle cx="431" cy="414" r="11" fill="#1d8eb0" stroke="#fffdf6" stroke-width="5"/>
-        <text x="70" y="88" class="map-label">France</text>
-        <text x="376" y="350" class="map-label">Arles</text>
-        <text x="310" y="398" class="map-label">Camargue</text>
-        <text x="354" y="445" class="map-label">Antibes</text>
-        <text x="70" y="464" class="map-small">Not to scale - just the trip shape</text>
-      </svg>
+      <div class="map-images">
+        <figure class="map-photo"><img src="assets/maps/france-trip-overview.png" alt="Satellite map of France with Antibes, Arles, and Saintes-Maries-de-la-Mer marked"><figcaption>Big-picture view: our stops sit along the Mediterranean side of southern France.</figcaption></figure>
+        <figure class="map-photo detail"><img src="assets/maps/provence-trip-detail.png" alt="Regional map of Provence and the Riviera with Antibes, Arles, and Saintes-Maries-de-la-Mer marked"><figcaption>Zoomed-in route: Antibes on the Riviera, then Arles and Camargue near the Rhône delta.</figcaption></figure>
+      </div>
     </div>
   </div>
 </section>
